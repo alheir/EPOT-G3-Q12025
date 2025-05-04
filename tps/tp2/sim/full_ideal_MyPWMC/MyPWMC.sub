@@ -1,0 +1,28 @@
+* My PWM Controller
+* By Marcos Alonso, marcos@uniovi.es
+* (C) 2021
+.subckt MyPWMC VIN N_INV INV +CL -CL SD GND COMP SWO -DR +DR VREF
+V1 SWO 0 PULSE(0.6 3.8 0 {0.99*1/f} {0.01*1/f} 0 {1/f})
+XU1 COMP SWO VIN 0 pwm MyComparator
+XU2 N_INV INV COMP MyOTA Ri=10e6 Ro=5e6 gm=2e-3 Fo=200
+V3 VB5 0 5
+E2 +DR -DR pwm 0 1
+XU3 +CL thr VIN COMP 0 MyComparatorOC
+R3 VREF VB5 10
+V4 -CL thr 200m
+R4 base sd1 200
+R5 sd1 SD 1k
+R6 0 sd1 10k
+Q1 COMP base 0 0 NPN
+V2 -lim 0 1.2
+D1 -lim COMP D
+V5 +lim 0 4.8
+D2 COMP +lim D
+.model D D
+.model NPN NPN
+.lib MyComparator.sub
+.lib MyComparatorOC.sub
+.lib MyOTA.sub
+.ends MyPWMC
+
+

@@ -1,0 +1,9 @@
+* Ideal Comparator
+* Marcos Alonso - May 2021
+*
+.subckt MyComparator in+ in- pos neg out
+E1 out  0    value={if(V(in+,in-)>0, V(pos),V(neg))}
+R1 in-  in+  1e6
+R2 neg  0    1e6
+R3 pos  0    1e6
+.ends MyComparator
