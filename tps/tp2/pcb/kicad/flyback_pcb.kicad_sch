@@ -1958,6 +1958,173 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1N4001"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4001"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "50V 1A General Purpose Rectifier Diode, DO-41"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?41*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4001_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4001_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Diode:1N4006"
 			(pin_numbers
 				(hide yes)
@@ -3838,7 +4005,7 @@
 	)
 	(text "Desde 300V"
 		(exclude_from_sim no)
-		(at 237.744 83.312 0)
+		(at 243.586 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3893,7 +4060,7 @@
 	)
 	(text "Alimentación\ninicial\ndel IC"
 		(exclude_from_sim no)
-		(at 236.728 71.882 0)
+		(at 272.288 67.818 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3904,7 +4071,7 @@
 	)
 	(text "Externo"
 		(exclude_from_sim no)
-		(at 236.22 94.742 0)
+		(at 239.522 89.408 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4249,16 +4416,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 90.17) (xy 248.92 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18e6056e-7780-4d75-82eb-582426d4e38d")
-	)
-	(wire
-		(pts
 			(xy 35.56 88.9) (xy 36.83 88.9)
 		)
 		(stroke
@@ -4439,7 +4596,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 96.52) (xy 248.92 99.06)
+			(xy 255.27 95.25) (xy 255.27 97.79)
 		)
 		(stroke
 			(width 0)
@@ -4579,7 +4736,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 93.98) (xy 248.92 93.98)
+			(xy 252.73 92.71) (xy 278.13 92.71)
 		)
 		(stroke
 			(width 0)
@@ -4596,6 +4753,16 @@
 			(type default)
 		)
 		(uuid "73d3e9d4-facd-49e5-bcd7-6ba884eb64dd")
+	)
+	(wire
+		(pts
+			(xy 262.89 90.17) (xy 270.51 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "766aaff3-09ff-4bc2-9e96-5ae618623db3")
 	)
 	(wire
 		(pts
@@ -4889,16 +5056,6 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 90.17) (xy 248.92 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7b2a7e6-2385-4352-8cc1-bf78a76deae8")
-	)
-	(wire
-		(pts
 			(xy 146.05 135.89) (xy 158.75 135.89)
 		)
 		(stroke
@@ -4909,7 +5066,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 96.52) (xy 248.92 96.52)
+			(xy 252.73 95.25) (xy 255.27 95.25)
 		)
 		(stroke
 			(width 0)
@@ -4986,6 +5143,16 @@
 			(type default)
 		)
 		(uuid "d7fdc879-782b-4dc9-8215-f5e115cc8d9e")
+	)
+	(wire
+		(pts
+			(xy 278.13 90.17) (xy 278.13 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db570d7e-4442-44b3-8c35-2cbc15aa1fd0")
 	)
 	(wire
 		(pts
@@ -8286,7 +8453,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 256.54 93.98 0)
+		(at 247.65 92.71 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8295,7 +8463,7 @@
 		(fields_autoplaced yes)
 		(uuid "69321a3a-661e-411a-b745-6102c2d14bab")
 		(property "Reference" "J4"
-			(at 259.08 93.9799 0)
+			(at 245.11 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8304,7 +8472,7 @@
 			)
 		)
 		(property "Value" "Bornera"
-			(at 259.08 96.5199 0)
+			(at 245.11 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8313,7 +8481,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 256.54 93.98 0)
+			(at 247.65 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8322,7 +8490,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 256.54 93.98 0)
+			(at 247.65 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8331,7 +8499,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 256.54 93.98 0)
+			(at 247.65 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8846,7 +9014,8 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 248.92 99.06 0)
+		(at 255.27 97.79 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8855,7 +9024,7 @@
 		(fields_autoplaced yes)
 		(uuid "89c010ae-d50a-430a-9bb7-853cd7effce6")
 		(property "Reference" "#PWR014"
-			(at 248.92 105.41 0)
+			(at 255.27 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8864,7 +9033,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 248.92 104.14 0)
+			(at 255.27 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8872,7 +9041,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 99.06 0)
+			(at 255.27 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8881,7 +9050,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 99.06 0)
+			(at 255.27 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8890,7 +9059,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 248.92 99.06 0)
+			(at 255.27 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9518,6 +9687,92 @@
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4001")
+		(at 274.32 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa1d2080-fdb1-48b0-9306-3e5159e778e4")
+		(property "Reference" "D8"
+			(at 274.32 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4001"
+			(at 274.32 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 274.32 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 274.32 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V 1A General Purpose Rectifier Diode, DO-41"
+			(at 274.32 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 274.32 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 274.32 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "502b48f9-2c9c-447f-9817-56d0bb18b284")
+		)
+		(pin "1"
+			(uuid "a5bef91b-c1c8-47f3-9739-516c983275dd")
+		)
+		(instances
+			(project "flyback_pcb"
+				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -10849,7 +11104,7 @@
 		(lib_id "Jumper:Jumper_2_Open")
 		(at 134.62 171.45 270)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -11818,7 +12073,7 @@
 		(lib_id "Jumper:Jumper_2_Open")
 		(at 156.21 171.45 270)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
