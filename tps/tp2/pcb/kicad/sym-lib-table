@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "2025-05-07_14-56-34")(type "KiCad")(uri "${KIPRJMOD}/lib/ul_UC3526N/2025-05-07_14-56-34.kicad_sym")(options "")(descr ""))
+  (lib (name "CPH-E55_28_21-1S-22P-Z")(type "KiCad")(uri "${KIPRJMOD}/lib/CPH-E55_28_21-1S-22P-Z/CPH-E55_28_21-1S-22P-Z.kicad_sym")(options "")(descr ""))
+)
