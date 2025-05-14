@@ -4147,10 +4147,10 @@
 		(uuid "ef10ac22-da94-42ef-84e6-8f5dd01c6e90")
 	)
 	(junction
-		(at 36.83 67.31)
+		(at 39.37 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0619350c-a28b-4468-99f1-6169572a311f")
+		(uuid "0c39f1d0-3463-4fcd-a176-dca0e1baa5c0")
 	)
 	(junction
 		(at 29.21 139.7)
@@ -4171,34 +4171,22 @@
 		(uuid "43a1d8d6-cfc4-431f-ab37-dd6a03052611")
 	)
 	(junction
-		(at 71.12 67.31)
+		(at 55.88 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b9d8945-07f4-4658-8c99-a20f5aa5a6d2")
 	)
 	(junction
-		(at 104.14 34.29)
+		(at 105.41 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4ebd4368-b617-422d-9a2b-27c7dc660517")
+		(uuid "4baabcec-95cc-4230-962a-0d5d43ed0feb")
 	)
 	(junction
-		(at 54.61 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5487a651-c475-41b6-afe3-c116723727fb")
-	)
-	(junction
-		(at 69.85 96.52)
+		(at 53.34 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "593c98e5-c3f1-44cf-a3e5-d8e5aebb42ed")
-	)
-	(junction
-		(at 142.24 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "598b1cd7-6482-4700-841b-3289431772b7")
 	)
 	(junction
 		(at 31.75 161.29)
@@ -4207,16 +4195,16 @@
 		(uuid "5ad2b33b-a5c8-41cb-858d-143e4232228d")
 	)
 	(junction
-		(at 85.09 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "62cafa4e-db21-40ba-8aad-fd93b6f169c9")
-	)
-	(junction
 		(at 160.02 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63435140-b2d4-44b3-970b-612d733ed9bf")
+	)
+	(junction
+		(at 85.09 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6397ebad-bda3-45a7-b4d7-e2bdc1523478")
 	)
 	(junction
 		(at 73.66 139.7)
@@ -4225,16 +4213,10 @@
 		(uuid "68cffcdc-ef9b-413d-ab04-b31f815cad7f")
 	)
 	(junction
-		(at 54.61 59.69)
+		(at 39.37 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6c4c0cdf-9669-48fe-b6df-6aa92eae6af8")
-	)
-	(junction
-		(at 36.83 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "70f3a7c3-86f2-40d7-8170-c2c0cef83773")
+		(uuid "7853479d-df04-47f3-9d9c-920560395f83")
 	)
 	(junction
 		(at 176.53 85.09)
@@ -4243,76 +4225,40 @@
 		(uuid "825ff592-947c-4be1-a225-62f5cde67501")
 	)
 	(junction
-		(at 124.46 34.29)
+		(at 105.41 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8a44028d-3295-48cd-90f5-839da45fc5ee")
+		(uuid "888cc803-1968-4e80-b1cf-4edcf1d61471")
 	)
 	(junction
-		(at 54.61 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "91cce575-cd75-4fb1-a030-3bef7d0607e8")
-	)
-	(junction
-		(at 69.85 88.9)
+		(at 53.34 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92cc6991-c307-4ce0-b6de-1e0ef41ed9d3")
 	)
 	(junction
-		(at 104.14 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "976ee106-167d-454f-95a1-358460811a92")
-	)
-	(junction
-		(at 54.61 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b0b2766-3426-4f70-95a3-82063a8d7f30")
-	)
-	(junction
-		(at 85.09 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9d17d38b-a3a1-4160-9315-c26356514147")
-	)
-	(junction
-		(at 36.83 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9db232cf-b340-41b1-a8bc-34e07accc25d")
-	)
-	(junction
-		(at 71.12 59.69)
+		(at 55.88 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9fe3ce35-97c4-49fe-9d74-b3cf9d616960")
 	)
 	(junction
-		(at 142.24 26.67)
+		(at 38.1 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b8478b44-8f75-4d71-9676-f87a9c1d3022")
+		(uuid "b2698232-5d95-45cb-882b-54c84a689d0e")
+	)
+	(junction
+		(at 85.09 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b63b7502-c1b7-4e64-9d94-b16426d9533d")
 	)
 	(junction
 		(at 50.8 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9c1bbe8-95e8-423b-886f-54d805d3c531")
-	)
-	(junction
-		(at 124.46 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cd81ce1e-6ecd-4ff2-b354-c33a85f9a24c")
-	)
-	(junction
-		(at 36.83 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cfa0487a-8ebd-4b29-8acc-cc0e476f5e7b")
 	)
 	(junction
 		(at 185.42 60.96)
@@ -4325,6 +4271,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d8266570-48d3-43ac-b19c-66b3911299d3")
+	)
+	(junction
+		(at 38.1 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f052b6e7-a11b-46d9-9671-1a05b3ef04d0")
 	)
 	(junction
 		(at 256.54 24.13)
@@ -4366,16 +4318,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 96.52) (xy 54.61 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05f0f7d5-6749-4c0b-9ff4-9bc612fb2601")
-	)
-	(wire
-		(pts
 			(xy 248.92 76.2) (xy 248.92 77.47)
 		)
 		(stroke
@@ -4386,7 +4328,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 96.52) (xy 69.85 96.52)
+			(xy 38.1 96.52) (xy 53.34 96.52)
 		)
 		(stroke
 			(width 0)
@@ -4396,13 +4338,13 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 88.9) (xy 54.61 88.9)
+			(xy 35.56 59.69) (xy 39.37 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "15f17cce-84d7-4201-941a-c763630014db")
+		(uuid "16d49f27-ee95-4e8f-8ec6-f76850262d65")
 	)
 	(wire
 		(pts
@@ -4416,16 +4358,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 88.9) (xy 36.83 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b81e60d-1bf9-4544-a327-bdbdaded739a")
-	)
-	(wire
-		(pts
 			(xy 146.05 118.11) (xy 158.75 118.11)
 		)
 		(stroke
@@ -4433,6 +4365,16 @@
 			(type default)
 		)
 		(uuid "1f3bf4b2-39cd-4e60-8f25-20f192fae84d")
+	)
+	(wire
+		(pts
+			(xy 24.13 96.52) (xy 38.1 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25efe9e6-3372-4761-8357-5341c6b29988")
 	)
 	(wire
 		(pts
@@ -4476,33 +4418,13 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 67.31) (xy 71.12 67.31)
+			(xy 39.37 67.31) (xy 55.88 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2bb1369f-2437-4ecb-923d-c66f9678572a")
-	)
-	(wire
-		(pts
-			(xy 85.09 26.67) (xy 104.14 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d0e02a9-e9d9-46c8-8ad8-6ee5c409838a")
-	)
-	(wire
-		(pts
-			(xy 24.13 96.52) (xy 36.83 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e1cd1e2-dcdd-4c1f-9995-249f8fd134e1")
 	)
 	(wire
 		(pts
@@ -4516,13 +4438,13 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 26.67) (xy 124.46 26.67)
+			(xy 85.09 34.29) (xy 105.41 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f3d9322-c29e-46fa-a6a1-bda38b8c344e")
+		(uuid "2f48a812-6d74-4d15-965e-d395efbf5915")
 	)
 	(wire
 		(pts
@@ -4586,16 +4508,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 34.29) (xy 104.14 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "400022a9-3db6-4752-9e38-835896c9dc6a")
-	)
-	(wire
-		(pts
 			(xy 255.27 95.25) (xy 255.27 97.79)
 		)
 		(stroke
@@ -4636,16 +4548,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 34.29) (xy 124.46 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a7ca52f-e686-41e7-8abb-f671aa319be1")
-	)
-	(wire
-		(pts
 			(xy 29.21 139.7) (xy 40.64 139.7)
 		)
 		(stroke
@@ -4666,7 +4568,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 26.67) (xy 144.78 26.67)
+			(xy 105.41 26.67) (xy 107.95 26.67)
 		)
 		(stroke
 			(width 0)
@@ -4676,7 +4578,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 88.9) (xy 69.85 88.9)
+			(xy 38.1 88.9) (xy 53.34 88.9)
 		)
 		(stroke
 			(width 0)
@@ -4706,7 +4608,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 67.31) (xy 78.74 67.31)
+			(xy 55.88 67.31) (xy 63.5 67.31)
 		)
 		(stroke
 			(width 0)
@@ -4766,26 +4668,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 59.69) (xy 36.83 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78e8cc4b-1d9c-4977-8aef-ad1975d8da18")
-	)
-	(wire
-		(pts
-			(xy 124.46 34.29) (xy 142.24 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79937b33-2017-403b-944f-3d205cd52e91")
-	)
-	(wire
-		(pts
 			(xy 250.19 130.81) (xy 262.89 130.81)
 		)
 		(stroke
@@ -4793,16 +4675,6 @@
 			(type default)
 		)
 		(uuid "7c1b4518-d55f-47b8-b6ce-6a0e4b5f55b2")
-	)
-	(wire
-		(pts
-			(xy 24.13 67.31) (xy 36.83 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e992ccc-007b-4104-803a-5f8741594dac")
 	)
 	(wire
 		(pts
@@ -4856,16 +4728,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 67.31) (xy 54.61 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86e6be66-d4ba-437c-9e9c-64a2b066bc63")
-	)
-	(wire
-		(pts
 			(xy 185.42 60.96) (xy 189.23 60.96)
 		)
 		(stroke
@@ -4906,13 +4768,23 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 34.29) (xy 144.78 34.29)
+			(xy 105.41 34.29) (xy 107.95 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "91677862-e576-4cda-8aad-73a87b9c1038")
+	)
+	(wire
+		(pts
+			(xy 24.13 67.31) (xy 39.37 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91867f01-fe0f-49c2-ab1f-07d8e96a861b")
 	)
 	(wire
 		(pts
@@ -4986,16 +4858,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 59.69) (xy 54.61 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa596681-6196-4d04-aed2-eb5efb7dbbdf")
-	)
-	(wire
-		(pts
 			(xy 256.54 31.75) (xy 256.54 34.29)
 		)
 		(stroke
@@ -5006,7 +4868,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 96.52) (xy 80.01 96.52)
+			(xy 53.34 96.52) (xy 63.5 96.52)
 		)
 		(stroke
 			(width 0)
@@ -5066,6 +4928,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 88.9) (xy 38.1 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb252c52-ec68-4cbf-9b41-c0a767f04322")
+	)
+	(wire
+		(pts
 			(xy 252.73 95.25) (xy 255.27 95.25)
 		)
 		(stroke
@@ -5096,7 +4968,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 88.9) (xy 80.01 88.9)
+			(xy 53.34 88.9) (xy 63.5 88.9)
 		)
 		(stroke
 			(width 0)
@@ -5136,16 +5008,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 26.67) (xy 142.24 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7fdc879-782b-4dc9-8215-f5e115cc8d9e")
-	)
-	(wire
-		(pts
 			(xy 278.13 90.17) (xy 278.13 92.71)
 		)
 		(stroke
@@ -5156,7 +5018,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 59.69) (xy 71.12 59.69)
+			(xy 39.37 59.69) (xy 55.88 59.69)
 		)
 		(stroke
 			(width 0)
@@ -5216,13 +5078,23 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 59.69) (xy 78.74 59.69)
+			(xy 55.88 59.69) (xy 63.5 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f43637d5-7323-4fa4-97e2-73e33bdb99f4")
+	)
+	(wire
+		(pts
+			(xy 85.09 26.67) (xy 105.41 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb46977e-3d38-4060-9e29-4384f877f3e5")
 	)
 	(wire
 		(pts
@@ -5395,7 +5267,7 @@
 		(uuid "92c5f7d9-621a-4b37-8f38-40a403d3d2b5")
 	)
 	(label "VL1"
-		(at 144.78 26.67 0)
+		(at 107.95 26.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5634,7 +5506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "061b218a-1299-4e59-9d5c-c9e232a5a412")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR011"
 			(at 115.57 57.15 0)
 			(effects
 				(font
@@ -5684,7 +5556,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR018")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5700,7 +5572,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0acb7296-6716-4735-b421-1860d9cf09f8")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR024"
 			(at 160.02 99.06 0)
 			(effects
 				(font
@@ -5750,7 +5622,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR039")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -5766,7 +5638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bbb085e-8b6a-49b5-a197-17aaf98b171f")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR018"
 			(at 115.57 74.93 0)
 			(effects
 				(font
@@ -5816,7 +5688,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR019")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -5824,7 +5696,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 144.78 34.29 0)
+		(at 107.95 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5832,8 +5704,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f5369f0-e596-47ad-8d3e-ce1f93f6f129")
-		(property "Reference" "#PWR011"
-			(at 144.78 40.64 0)
+		(property "Reference" "#PWR06"
+			(at 107.95 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5842,7 +5714,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 144.78 39.37 0)
+			(at 107.95 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5850,7 +5722,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 34.29 0)
+			(at 107.95 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5859,7 +5731,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 34.29 0)
+			(at 107.95 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5868,7 +5740,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 144.78 34.29 0)
+			(at 107.95 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5882,7 +5754,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR011")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5890,7 +5762,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 80.01 96.52 0)
+		(at 63.5 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5898,8 +5770,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12f234ba-38a4-445c-9b0c-fcc41bcf882e")
-		(property "Reference" "#PWR022"
-			(at 80.01 102.87 0)
+		(property "Reference" "#PWR027"
+			(at 63.5 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5908,7 +5780,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 80.01 101.6 0)
+			(at 63.5 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5916,7 +5788,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 96.52 0)
+			(at 63.5 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5925,7 +5797,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 96.52 0)
+			(at 63.5 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5934,7 +5806,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 80.01 96.52 0)
+			(at 63.5 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5948,7 +5820,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR022")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -5964,7 +5836,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13f63977-b398-4a5d-9bf9-bbba6aa61fe9")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR025"
 			(at 91.44 100.33 0)
 			(effects
 				(font
@@ -6014,7 +5886,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR024")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -6030,7 +5902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "142da5bb-91b4-40fe-93c7-95dd310a7019")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR01"
 			(at 60.96 26.67 0)
 			(effects
 				(font
@@ -6080,7 +5952,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR03")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -6096,7 +5968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15d6fbcf-c7cb-4269-859c-14cad3fb1a32")
-		(property "Reference" "R1"
+		(property "Reference" "R4"
 			(at 177.8 54.61 90)
 			(effects
 				(font
@@ -6148,7 +6020,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "R1")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -6163,7 +6035,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1771ae65-0c80-4917-a7c3-165ea5160b91")
-		(property "Reference" "C1"
+		(property "Reference" "C2"
 			(at 88.9 28.3209 0)
 			(effects
 				(font
@@ -6181,7 +6053,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D14.0mm_P5.00mm"
 			(at 86.0552 34.29 0)
 			(effects
 				(font
@@ -6217,7 +6089,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -6233,7 +6105,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "179e2e29-8535-4e7d-8957-48d2cd6af610")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR041"
 			(at 134.62 182.88 0)
 			(effects
 				(font
@@ -6283,7 +6155,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR043")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -6299,7 +6171,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e149b13-7602-4047-8b46-bc3bc5ed5e2c")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR02"
 			(at 231.14 31.75 0)
 			(effects
 				(font
@@ -6349,7 +6221,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR06")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -6365,7 +6237,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21c0ef9c-3ccd-4332-9e5f-145406748a4c")
-		(property "Reference" "J6"
+		(property "Reference" "J5"
 			(at 99.06 91.4399 0)
 			(effects
 				(font
@@ -6419,7 +6291,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "J6")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -6435,7 +6307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23aabede-ec04-4558-883c-67dc37264214")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR013"
 			(at 92.71 66.04 0)
 			(effects
 				(font
@@ -6485,7 +6357,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR017")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -6501,7 +6373,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b47eb44-c084-4319-92ab-25b85ae92a27")
-		(property "Reference" "C18"
+		(property "Reference" "C8"
 			(at 194.31 87.6299 0)
 			(effects
 				(font
@@ -6519,7 +6391,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 191.4652 92.71 0)
 			(effects
 				(font
@@ -6555,7 +6427,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C18")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -6563,7 +6435,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 80.01 88.9 0)
+		(at 63.5 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6571,8 +6443,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d2f7290-474f-4938-a418-62c4e7b9c9be")
-		(property "Reference" "#PWR021"
-			(at 80.01 92.71 0)
+		(property "Reference" "#PWR022"
+			(at 63.5 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6581,7 +6453,7 @@
 			)
 		)
 		(property "Value" "+16V"
-			(at 80.01 83.82 0)
+			(at 63.5 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6589,7 +6461,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 88.9 0)
+			(at 63.5 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6598,7 +6470,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 88.9 0)
+			(at 63.5 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6607,7 +6479,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 80.01 88.9 0)
+			(at 63.5 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6621,7 +6493,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR021")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -6637,7 +6509,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e792214-744b-4b05-9101-0b36df6ae60f")
-		(property "Reference" "D2"
+		(property "Reference" "D5"
 			(at 32.0675 53.34 0)
 			(effects
 				(font
@@ -6689,7 +6561,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "D2")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -6802,7 +6674,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fd9e414-3f7c-4e10-9116-c3b2489862a6")
-		(property "Reference" "D7"
+		(property "Reference" "D1"
 			(at 168.91 26.9874 90)
 			(effects
 				(font
@@ -6865,7 +6737,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "D7")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -6881,7 +6753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "300e35db-a5d5-4882-81a9-b47af9c5fb9b")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR010"
 			(at 231.14 54.61 0)
 			(effects
 				(font
@@ -6931,7 +6803,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR013")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -6946,7 +6818,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "31331b4f-6d58-4d7c-9e83-a5ba61d28e1b")
-		(property "Reference" "R13"
+		(property "Reference" "R11"
 			(at 76.2 142.2399 0)
 			(effects
 				(font
@@ -7000,7 +6872,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "R13")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -7016,7 +6888,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3729d54d-33dc-41e9-a8a3-fb281b63b584")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR032"
 			(at 246.38 128.27 0)
 			(effects
 				(font
@@ -7067,7 +6939,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR028")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -7083,7 +6955,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3af70cba-b9d5-4189-a923-5b46105f7f1a")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR014"
 			(at 92.71 71.12 0)
 			(effects
 				(font
@@ -7133,7 +7005,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR016")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -7149,7 +7021,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "433927c5-439d-4f03-822a-74b135b81d33")
-		(property "Reference" "R4"
+		(property "Reference" "R7"
 			(at 118.11 95.2499 0)
 			(effects
 				(font
@@ -7203,7 +7075,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "R4")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7219,7 +7091,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43f43840-325b-47f5-800a-a3fe6bb622d5")
-		(property "Reference" "C20"
+		(property "Reference" "C11"
 			(at 254 140.9699 0)
 			(effects
 				(font
@@ -7237,7 +7109,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 251.1552 146.05 0)
 			(effects
 				(font
@@ -7273,7 +7145,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C20")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -7385,7 +7257,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4717d7c3-e7ab-41eb-bfae-73d42dd0dbea")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR038"
 			(at 73.66 153.67 0)
 			(effects
 				(font
@@ -7435,7 +7307,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR034")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -7451,7 +7323,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47a15828-57e1-45ce-a04a-84ea686fa441")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR042"
 			(at 156.21 182.88 0)
 			(effects
 				(font
@@ -7501,7 +7373,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR044")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -7517,7 +7389,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4934fb7b-de6b-4735-91f5-fe16892e4112")
-		(property "Reference" "D4"
+		(property "Reference" "D6"
 			(at 32.0675 82.55 0)
 			(effects
 				(font
@@ -7569,76 +7441,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 104.14 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4db6d896-ee87-461d-8b4a-b9c11ac5d14b")
-		(property "Reference" "C2"
-			(at 107.95 28.3209 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100u-600V"
-			(at 107.95 30.8609 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.1052 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 104.14 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 104.14 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "858b0863-8ea4-4dcd-a6f7-84574fb8814d")
-		)
-		(pin "2"
-			(uuid "7f6517a7-b6d9-47a2-af70-f201b5891771")
-		)
-		(instances
-			(project "flyback_pcb"
-				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C2")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -7654,7 +7457,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4df1a76f-6864-4d7d-b18c-8d467d0405d6")
-		(property "Reference" "D1"
+		(property "Reference" "D2"
 			(at 69.85 24.0598 0)
 			(effects
 				(font
@@ -7713,7 +7516,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "D1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -7729,7 +7532,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4fa6185e-0737-4bc0-86b0-9d2b0212d695")
-		(property "Reference" "R11"
+		(property "Reference" "R10"
 			(at 26.67 142.2399 0)
 			(effects
 				(font
@@ -7783,7 +7586,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "R11")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -7798,7 +7601,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50ddc05f-110e-4d1b-87ac-f00901ae6099")
-		(property "Reference" "R14"
+		(property "Reference" "R12"
 			(at 34.29 166.3699 0)
 			(effects
 				(font
@@ -7852,7 +7655,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "R14")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -7868,7 +7671,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51171a01-6be9-4ff5-b3d1-45f356ed9060")
-		(property "Reference" "R3"
+		(property "Reference" "R5"
 			(at 118.11 63.4999 0)
 			(effects
 				(font
@@ -7922,7 +7725,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "R3")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -7938,7 +7741,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "542d040d-9406-4f73-a648-e4b863b09dfc")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR037"
 			(at 29.21 153.67 0)
 			(effects
 				(font
@@ -7988,7 +7791,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR030")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -8004,7 +7807,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56217414-6772-4854-bb90-d970ca891c80")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR03"
 			(at 26.67 33.02 0)
 			(effects
 				(font
@@ -8054,7 +7857,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR01")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -8070,7 +7873,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "564630ae-563d-4c2b-bfb6-621669c50e89")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR031"
 			(at 256.54 125.73 0)
 			(effects
 				(font
@@ -8121,7 +7924,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR029")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -8137,7 +7940,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60ea9d4d-d146-4876-a009-651ff4c5c266")
-		(property "Reference" "C15"
+		(property "Reference" "C12"
 			(at 113.03 171.4499 0)
 			(effects
 				(font
@@ -8155,7 +7958,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 110.1852 176.53 0)
 			(effects
 				(font
@@ -8191,7 +7994,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C15")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -8277,7 +8080,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61708ee5-e673-4213-a5a6-4724806b2ddc")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR09"
 			(at 165.1 44.45 0)
 			(effects
 				(font
@@ -8327,7 +8130,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR031")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -8462,7 +8265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69321a3a-661e-411a-b745-6102c2d14bab")
-		(property "Reference" "J4"
+		(property "Reference" "J6"
 			(at 245.11 92.7099 0)
 			(effects
 				(font
@@ -8516,7 +8319,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "J4")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -8532,7 +8335,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69b4b85d-0202-400b-83cd-fa391709641b")
-		(property "Reference" "D5"
+		(property "Reference" "D7"
 			(at 119.38 89.2174 90)
 			(effects
 				(font
@@ -8595,7 +8398,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "D5")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -8684,7 +8487,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d331b3f-340d-458c-b780-7445a4a5f694")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR040"
 			(at 109.22 182.88 0)
 			(effects
 				(font
@@ -8734,7 +8537,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR033")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -8750,7 +8553,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d8291bf-f1cf-4c10-91e3-d2e3d10ffadc")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR023"
 			(at 91.44 95.25 0)
 			(effects
 				(font
@@ -8800,7 +8603,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR045")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -8817,7 +8620,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77881731-9a53-4d06-90d5-71dabbff5679")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR039"
 			(at 87.63 153.67 0)
 			(effects
 				(font
@@ -8867,7 +8670,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR035")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -8883,7 +8686,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77c819c3-d3f8-4d06-8320-848ca48ecc00")
-		(property "Reference" "C14"
+		(property "Reference" "C13"
 			(at 35.56 175.2599 0)
 			(effects
 				(font
@@ -8901,7 +8704,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 32.7152 180.34 0)
 			(effects
 				(font
@@ -8937,7 +8740,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C14")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -8952,7 +8755,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7d496727-de68-4345-8b6e-b09a0e88ff3c")
-		(property "Reference" "C16"
+		(property "Reference" "C6"
 			(at 163.83 86.7409 0)
 			(effects
 				(font
@@ -8970,7 +8773,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D14.0mm_P5.00mm"
 			(at 160.9852 92.71 0)
 			(effects
 				(font
@@ -9006,7 +8809,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C16")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -9023,7 +8826,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89c010ae-d50a-430a-9bb7-853cd7effce6")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR028"
 			(at 255.27 104.14 0)
 			(effects
 				(font
@@ -9073,7 +8876,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR014")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -9089,7 +8892,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93402a2e-1925-4ca4-82e2-49c4810faf4d")
-		(property "Reference" "C17"
+		(property "Reference" "C7"
 			(at 180.34 87.6299 0)
 			(effects
 				(font
@@ -9107,7 +8910,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 177.4952 92.71 0)
 			(effects
 				(font
@@ -9143,7 +8946,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C17")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -9158,7 +8961,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "93f2e19e-976a-4a00-a01e-9b5e79664f3a")
-		(property "Reference" "R12"
+		(property "Reference" "R9"
 			(at 76.2 134.6199 0)
 			(effects
 				(font
@@ -9212,7 +9015,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "R12")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -9228,7 +9031,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a34a92e-3703-4b4a-9bf3-716e54af4608")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR029"
 			(at 115.57 106.68 0)
 			(effects
 				(font
@@ -9278,7 +9081,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR026")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -9294,7 +9097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c6ab434-e8d5-47d0-8a9f-de7be52c3dd6")
-		(property "Reference" "J5"
+		(property "Reference" "J4"
 			(at 100.33 62.2299 0)
 			(effects
 				(font
@@ -9348,7 +9151,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "J5")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -9364,7 +9167,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e0167fe-d108-4a83-8535-5db4b0fd2618")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR036"
 			(at 271.78 152.4 0)
 			(effects
 				(font
@@ -9414,7 +9217,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR042")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -9429,7 +9232,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a0185a21-cd84-4f84-9943-5245e3a3ff01")
-		(property "Reference" "RD"
+		(property "Reference" "RD1"
 			(at 269.24 143.5101 0)
 			(effects
 				(font
@@ -9483,7 +9286,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "RD")
+					(reference "RD1")
 					(unit 1)
 				)
 			)
@@ -9500,7 +9303,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1597399-a03d-4bb6-8487-cc698895226e")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR043"
 			(at 31.75 189.23 0)
 			(effects
 				(font
@@ -9550,7 +9353,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR036")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -9566,7 +9369,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a762c137-313e-4bcc-915c-52ed8d7c010a")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR020"
 			(at 115.57 88.9 0)
 			(effects
 				(font
@@ -9616,7 +9419,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR025")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -9632,7 +9435,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a863d38c-ba60-485a-9ea7-06b6b817b01f")
-		(property "Reference" "R5"
+		(property "Reference" "R1"
 			(at 247.65 26.6699 0)
 			(effects
 				(font
@@ -9686,7 +9489,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "R5")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -9780,7 +9583,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 71.12 63.5 0)
+		(at 55.88 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9788,7 +9591,7 @@
 		(dnp no)
 		(uuid "aafa783e-8c42-4d8d-ab40-916caddc2cf0")
 		(property "Reference" "C5"
-			(at 74.93 62.23 0)
+			(at 59.69 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9797,7 +9600,7 @@
 			)
 		)
 		(property "Value" "47u-25V"
-			(at 74.93 64.516 0)
+			(at 59.69 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9805,8 +9608,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 72.0852 67.31 0)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D14.0mm_P5.00mm"
+			(at 56.8452 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9815,7 +9618,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 63.5 0)
+			(at 55.88 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9824,7 +9627,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 71.12 63.5 0)
+			(at 55.88 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9848,76 +9651,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 36.83 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "abb0b601-fd21-4934-bede-31587719ff91")
-		(property "Reference" "C11"
-			(at 40.64 91.4399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n-35V"
-			(at 40.64 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 37.7952 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 36.83 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 36.83 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b1ca790d-33a8-4ff9-af9c-8785c7be8f15")
-		)
-		(pin "2"
-			(uuid "c3d4ebd0-ad4c-4427-9b6c-65e83e41539d")
-		)
-		(instances
-			(project "flyback_pcb"
-				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 115.57 57.15 90)
 		(unit 1)
@@ -9927,7 +9660,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "adcd7cce-6b40-43d0-817c-a1d95a4ea1be")
-		(property "Reference" "D3"
+		(property "Reference" "D4"
 			(at 119.38 57.4674 90)
 			(effects
 				(font
@@ -9990,7 +9723,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "D3")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -10006,7 +9739,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0dbd61a-2806-46b5-b9e0-a3783979d48a")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR026"
 			(at 24.13 102.87 0)
 			(effects
 				(font
@@ -10056,7 +9789,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR020")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -10072,7 +9805,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b52468b5-5697-4b97-9a22-d9ffc843318c")
-		(property "Reference" "R2"
+		(property "Reference" "R6"
 			(at 255.27 71.12 90)
 			(effects
 				(font
@@ -10124,7 +9857,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "R2")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -10140,7 +9873,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bbb613dc-359f-450f-92c6-49a9bb31d4b6")
-		(property "Reference" "D6"
+		(property "Reference" "D3"
 			(at 259.08 46.9899 90)
 			(effects
 				(font
@@ -10212,7 +9945,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "D6")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -10229,7 +9962,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bde8dc76-c1db-4fd1-bb4f-6bca1158d629")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR044"
 			(at 50.8 189.23 0)
 			(effects
 				(font
@@ -10279,7 +10012,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR037")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -10287,7 +10020,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 78.74 59.69 0)
+		(at 63.5 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10295,8 +10028,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be00c11a-aac8-4dc9-9df1-b63acc1dc442")
-		(property "Reference" "#PWR015"
-			(at 78.74 63.5 0)
+		(property "Reference" "#PWR012"
+			(at 63.5 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10305,7 +10038,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 78.74 54.61 0)
+			(at 63.5 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10313,7 +10046,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 59.69 0)
+			(at 63.5 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10322,7 +10055,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 59.69 0)
+			(at 63.5 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10331,7 +10064,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 78.74 59.69 0)
+			(at 63.5 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10345,7 +10078,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR015")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -10361,7 +10094,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bea90822-2066-498d-8415-c5262e4772be")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR030"
 			(at 246.38 120.65 0)
 			(effects
 				(font
@@ -10412,7 +10145,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR027")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -10428,7 +10161,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "beef4f51-838e-4892-ac5c-ccd9dccbf41a")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR08"
 			(at 60.96 34.29 0)
 			(effects
 				(font
@@ -10478,7 +10211,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR04")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -10494,7 +10227,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c000cda2-1cf7-45dd-91cf-ce371c1cd6c6")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR05"
 			(at 82.55 40.64 0)
 			(effects
 				(font
@@ -10544,7 +10277,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR09")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -10560,7 +10293,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c105b213-0682-4a3e-8f32-5b990bf1e7b0")
-		(property "Reference" "R10"
+		(property "Reference" "R8"
 			(at 26.67 134.6199 0)
 			(effects
 				(font
@@ -10614,7 +10347,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "R10")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -10630,7 +10363,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7529920-2b6e-4248-a42f-62f89af49045")
-		(property "Reference" "R6"
+		(property "Reference" "R2"
 			(at 167.64 33.0199 0)
 			(effects
 				(font
@@ -10684,7 +10417,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "R6")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -10773,7 +10506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cc28c734-419e-4340-9b2d-7a140b1f9072")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR033"
 			(at 29.21 135.89 0)
 			(effects
 				(font
@@ -10823,7 +10556,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR032")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -10839,7 +10572,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1af7012-5a1e-4ce5-a520-fea8da278459")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR035"
 			(at 250.19 152.4 0)
 			(effects
 				(font
@@ -10889,7 +10622,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR041")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -10905,7 +10638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2602621-014e-4359-ade5-485398f5e901")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR021"
 			(at 160.02 88.9 0)
 			(effects
 				(font
@@ -10955,7 +10688,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR038")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -10971,7 +10704,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d53765c0-e2e7-4c9b-8edf-8ba20db7ec94")
-		(property "Reference" "R9"
+		(property "Reference" "R3"
 			(at 254 36.8299 0)
 			(effects
 				(font
@@ -11025,7 +10758,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "R9")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -11033,7 +10766,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 69.85 92.71 0)
+		(at 53.34 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11041,7 +10774,7 @@
 		(dnp no)
 		(uuid "d5ec5ff8-3574-4f56-af2e-4bf968d8f21e")
 		(property "Reference" "C10"
-			(at 74.168 91.948 0)
+			(at 57.658 91.948 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11050,7 +10783,7 @@
 			)
 		)
 		(property "Value" "47u-35V"
-			(at 73.914 94.234 0)
+			(at 57.404 94.234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11058,8 +10791,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 70.8152 96.52 0)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D14.0mm_P5.00mm"
+			(at 54.3052 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11068,7 +10801,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 92.71 0)
+			(at 53.34 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11077,7 +10810,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 69.85 92.71 0)
+			(at 53.34 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11180,7 +10913,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e14cf9ff-7d9c-4007-96fd-f9c03bdd9e5f")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR04"
 			(at 26.67 27.94 0)
 			(effects
 				(font
@@ -11230,7 +10963,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR02")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -11311,7 +11044,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 142.24 30.48 0)
+		(at 105.41 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11319,8 +11052,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5eb594e-d7f9-4370-8cdb-ae9ff8f9ad58")
-		(property "Reference" "C4"
-			(at 146.05 29.2099 0)
+		(property "Reference" "C3"
+			(at 109.22 29.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11329,7 +11062,7 @@
 			)
 		)
 		(property "Value" "1u-600V"
-			(at 146.05 31.7499 0)
+			(at 109.22 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11338,7 +11071,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.2052 34.29 0)
+			(at 106.3752 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11347,7 +11080,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 30.48 0)
+			(at 105.41 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11356,7 +11089,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 142.24 30.48 0)
+			(at 105.41 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11372,76 +11105,6 @@
 		)
 		(instances
 			(project "flyback_pcb"
-				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 124.46 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5fd47b5-4302-436f-8968-70886a0e19e6")
-		(property "Reference" "C3"
-			(at 128.27 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u-600V"
-			(at 128.27 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.4252 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 124.46 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "102ff1a9-1bbc-4701-a6df-91e8b8bb8543")
-		)
-		(pin "2"
-			(uuid "0fbe17eb-6572-42d3-aff7-bb49e6caae81")
-		)
-		(instances
-			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
 					(reference "C3")
 					(unit 1)
@@ -11527,7 +11190,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 54.61 92.71 0)
+		(at 38.1 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11535,8 +11198,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e644265e-5225-4bd5-9578-3c43dbcb39fd")
-		(property "Reference" "C12"
-			(at 58.42 91.4399 0)
+		(property "Reference" "C9"
+			(at 41.91 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11545,7 +11208,7 @@
 			)
 		)
 		(property "Value" "1u-35V"
-			(at 58.42 93.9799 0)
+			(at 41.91 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11553,8 +11216,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 55.5752 96.52 0)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+			(at 39.0652 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11563,7 +11226,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 92.71 0)
+			(at 38.1 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11572,7 +11235,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 54.61 92.71 0)
+			(at 38.1 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11589,7 +11252,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C12")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -11605,7 +11268,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e65dca37-7e76-4ca4-a69d-927f17479ab2")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR016"
 			(at 24.13 73.66 0)
 			(effects
 				(font
@@ -11655,7 +11318,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR08")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -11663,7 +11326,7 @@
 	)
 	(symbol
 		(lib_id "power:GND2")
-		(at 78.74 67.31 0)
+		(at 63.5 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11671,8 +11334,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8ccde13-51b0-42a8-8d5f-703ed88c7d3e")
-		(property "Reference" "#PWR07"
-			(at 78.74 73.66 0)
+		(property "Reference" "#PWR017"
+			(at 63.5 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11681,7 +11344,7 @@
 			)
 		)
 		(property "Value" "GND2"
-			(at 78.74 72.39 0)
+			(at 63.5 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11689,7 +11352,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 67.31 0)
+			(at 63.5 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11698,7 +11361,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 67.31 0)
+			(at 63.5 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11707,7 +11370,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND2\" , ground"
-			(at 78.74 67.31 0)
+			(at 63.5 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11721,77 +11384,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 36.83 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ee5589ff-57a5-40d3-bd91-b52287b2b357")
-		(property "Reference" "C8"
-			(at 40.64 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n-25V"
-			(at 40.64 64.7699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 37.7952 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 36.83 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 36.83 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1dc7e66a-2b92-4ec4-986e-527ea356236e")
-		)
-		(pin "2"
-			(uuid "38d5347d-ccc2-4ace-bc16-d7cb8487ce0c")
-		)
-		(instances
-			(project "flyback_pcb"
-				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C8")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -11807,7 +11400,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f0b0dbf8-f9fa-48e1-aee2-9693a7b5eabd")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR07"
 			(at 50.8 44.45 0)
 			(effects
 				(font
@@ -11857,7 +11450,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR010")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -11873,7 +11466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f33b8dd0-b3bd-4679-9373-306b59b0fec5")
-		(property "Reference" "C13"
+		(property "Reference" "C1"
 			(at 266.7 26.6699 0)
 			(effects
 				(font
@@ -11891,7 +11484,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 263.8552 31.75 0)
 			(effects
 				(font
@@ -11927,7 +11520,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C13")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -11943,7 +11536,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3f8bf0b-e33c-4375-aa63-80793b5f80a7")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR019"
 			(at 269.24 85.09 0)
 			(effects
 				(font
@@ -11993,7 +11586,7 @@
 		(instances
 			(project ""
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR05")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -12001,7 +11594,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 54.61 63.5 0)
+		(at 39.37 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12009,8 +11602,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f41c79f6-2e50-4cb3-99af-d351dbb71caf")
-		(property "Reference" "C19"
-			(at 58.42 62.2299 0)
+		(property "Reference" "C4"
+			(at 43.18 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12019,7 +11612,7 @@
 			)
 		)
 		(property "Value" "1u-25V"
-			(at 58.42 64.7699 0)
+			(at 43.18 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12027,8 +11620,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 55.5752 67.31 0)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+			(at 40.3352 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12037,7 +11630,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 63.5 0)
+			(at 39.37 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12046,7 +11639,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 54.61 63.5 0)
+			(at 39.37 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12063,7 +11656,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "C19")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -12149,7 +11742,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb63a473-0ad4-4d10-a678-003fb254358c")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR015"
 			(at 196.85 72.39 0)
 			(effects
 				(font
@@ -12199,7 +11792,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR012")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -12215,7 +11808,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fee9a775-fce8-4616-aad8-3a1b5866a9c5")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR034"
 			(at 158.75 152.4 0)
 			(effects
 				(font
@@ -12265,7 +11858,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "#PWR040")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -12280,7 +11873,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ff2152e3-022d-481f-b7fd-31280536db7f")
-		(property "Reference" "RT"
+		(property "Reference" "RT1"
 			(at 156.21 143.5101 0)
 			(effects
 				(font
@@ -12334,7 +11927,7 @@
 		(instances
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
-					(reference "RT")
+					(reference "RT1")
 					(unit 1)
 				)
 			)
