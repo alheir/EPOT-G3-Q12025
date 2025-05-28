@@ -4270,6 +4270,17 @@
 		)
 		(uuid "57806d7c-caee-4506-a377-8a39286fe1d2")
 	)
+	(text "8.6n"
+		(exclude_from_sim no)
+		(at 271.272 32.258 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+		)
+		(uuid "5a3ae90c-5c65-4394-86f6-3fb2b529b668")
+	)
 	(text "5V"
 		(exclude_from_sim no)
 		(at 76.454 130.556 0)
@@ -4607,6 +4618,12 @@
 		(uuid "b2698232-5d95-45cb-882b-54c84a689d0e")
 	)
 	(junction
+		(at 31.75 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b5617e7b-1d76-4461-9611-e98c938e0c20")
+	)
+	(junction
 		(at 85.09 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4664,7 +4681,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 182.88) (xy 31.75 180.34)
+			(xy 31.75 182.88) (xy 31.75 181.61)
 		)
 		(stroke
 			(width 0)
@@ -5024,6 +5041,16 @@
 	)
 	(wire
 		(pts
+			(xy 20.32 170.18) (xy 20.32 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65118b81-4d11-4f5f-af98-0de4fe103c6a")
+	)
+	(wire
+		(pts
 			(xy 55.88 67.31) (xy 63.5 67.31)
 		)
 		(stroke
@@ -5164,6 +5191,16 @@
 	)
 	(wire
 		(pts
+			(xy 20.32 161.29) (xy 31.75 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b94737d-eb96-44f6-b64a-bec31e7e5cb3")
+	)
+	(wire
+		(pts
 			(xy 105.41 34.29) (xy 107.95 34.29)
 		)
 		(stroke
@@ -5201,16 +5238,6 @@
 			(type default)
 		)
 		(uuid "9a3dae5a-4c47-4850-8c23-8f4889d78ca4")
-	)
-	(wire
-		(pts
-			(xy 262.89 92.71) (xy 252.73 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c1982aa-1fc3-4512-967b-428d549edeef")
 	)
 	(wire
 		(pts
@@ -5394,6 +5421,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 181.61) (xy 31.75 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c90e0645-c555-4f7f-af9e-309fc42ce6a5")
+	)
+	(wire
+		(pts
 			(xy 262.89 90.17) (xy 262.89 92.71)
 		)
 		(stroke
@@ -5421,6 +5458,16 @@
 			(type default)
 		)
 		(uuid "cd322d18-8de4-4bc8-b5e4-ebafe2c1b851")
+	)
+	(wire
+		(pts
+			(xy 20.32 177.8) (xy 20.32 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4d1e16f-4da3-428b-b83e-92df7002abfa")
 	)
 	(wire
 		(pts
@@ -5474,16 +5521,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 161.29) (xy 31.75 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ddbd267d-73e5-4456-b4e8-3308039d2a6b")
-	)
-	(wire
-		(pts
 			(xy 31.75 172.72) (xy 31.75 171.45)
 		)
 		(stroke
@@ -5504,6 +5541,16 @@
 	)
 	(wire
 		(pts
+			(xy 20.32 181.61) (xy 31.75 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7285895-2f38-4e7f-8693-8ffd3abef0e6")
+	)
+	(wire
+		(pts
 			(xy 191.77 26.67) (xy 198.12 26.67)
 		)
 		(stroke
@@ -5511,6 +5558,16 @@
 			(type default)
 		)
 		(uuid "e7d40ef7-fb0d-44e7-9594-c7ecaa7a4df1")
+	)
+	(wire
+		(pts
+			(xy 260.35 92.71) (xy 262.89 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1f7b806-f655-4b25-9269-70695f779a5d")
 	)
 	(wire
 		(pts
@@ -6191,6 +6248,92 @@
 			(project "flyback_pcb"
 				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4006")
+		(at 256.54 92.71 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "100ecf09-f4c5-4e35-b7c8-66b075fc126e")
+		(property "Reference" "D8"
+			(at 256.54 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4008"
+			(at 256.54 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 256.54 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 256.54 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "800V 1A General Purpose Rectifier Diode, DO-41"
+			(at 256.54 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 256.54 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 256.54 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "310f34fb-ac6b-474c-be4c-ea00002ab9ec")
+		)
+		(pin "2"
+			(uuid "7c0a7e27-753c-411d-9965-3f206d56111e")
+		)
+		(instances
+			(project "flyback_pcb"
+				(path "/847a25f2-0901-4b4c-9f93-5b1d0db6f010"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -7085,7 +7228,7 @@
 				)
 			)
 		)
-		(property "Value" "MBR340"
+		(property "Value" "MUR460"
 			(at 32.0675 55.88 0)
 			(effects
 				(font
@@ -8084,24 +8227,24 @@
 	)
 	(symbol
 		(lib_id "Diode:MBR340")
-		(at 31.75 88.9 180)
+		(at 31.75 88.9 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4934fb7b-de6b-4735-91f5-fe16892e4112")
 		(property "Reference" "D6"
-			(at 32.0675 82.55 0)
+			(at 31.4325 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "MBR340"
-			(at 32.0675 85.09 0)
+		(property "Value" "MUR160"
+			(at 31.4325 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9536,7 +9679,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "100n"
 			(at 35.56 177.7999 0)
 			(effects
 				(font
@@ -10484,7 +10627,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "51k"
+		(property "Value" "36k"
 			(at 247.65 29.2099 0)
 			(effects
 				(font
@@ -10903,7 +11046,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N4008"
+		(property "Value" "FR107"
 			(at 259.08 49.5299 90)
 			(effects
 				(font
@@ -11734,7 +11877,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120"
+		(property "Value" "270"
 			(at 254 39.3699 0)
 			(effects
 				(font
@@ -12496,7 +12639,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.6n-600V"
+		(property "Value" "8.2n-Snubber"
 			(at 266.7 29.2099 0)
 			(effects
 				(font
