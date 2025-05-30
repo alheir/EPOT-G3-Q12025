@@ -1,0 +1,8 @@
+* Operational transconductance amplifier
+.subckt OTA_3526 1 2 3
+Ri 1 2 {Ri}
+G1 0 3 value={gm*V(1,2)}
+Ro 3 0 {Ro}
+Co 3 0 {1/( 2*pi*Ro*Fo )}
+.ends OTA_3526
+
