@@ -4270,7 +4270,7 @@
 		)
 		(uuid "57806d7c-caee-4506-a377-8a39286fe1d2")
 	)
-	(text "8.6n"
+	(text "8.6n -> 10n"
 		(exclude_from_sim no)
 		(at 271.272 32.258 0)
 		(effects
@@ -4358,6 +4358,17 @@
 		)
 		(uuid "9a7fbeee-ad17-438e-b031-ad36adda9771")
 	)
+	(text "120 + 150"
+		(exclude_from_sim no)
+		(at 264.668 38.608 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+		)
+		(uuid "9f5ce0ed-262f-4703-8c0d-d94883363d38")
+	)
 	(text "Alimentación\ninicial\ndel IC"
 		(exclude_from_sim no)
 		(at 272.288 67.818 0)
@@ -4380,7 +4391,7 @@
 		)
 		(uuid "b47068bf-70ce-457c-9134-58e4be9f3fda")
 	)
-	(text "RT <- 3.3k\nCT <- 5nF\nRD <- 0 (default deadtime)\n\nOscillator Period <- 8uS\nFosc <- 125kHz"
+	(text "RT <- 6k\nCT <- 2nF\nRD <- 0 (default deadtime)\n\nOscillator Period <- 7.14uS\nFosc <- 140kHz"
 		(exclude_from_sim no)
 		(at 205.486 152.146 0)
 		(effects
@@ -6555,7 +6566,7 @@
 				)
 			)
 		)
-		(property "Value" "80"
+		(property "Value" "82"
 			(at 177.8 57.15 90)
 			(effects
 				(font
@@ -7946,7 +7957,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5n-25V"
+		(property "Value" "2n-25V"
 			(at 254 143.5099 0)
 			(effects
 				(font
@@ -8228,7 +8239,7 @@
 	(symbol
 		(lib_id "Diode:MBR340")
 		(at 31.75 88.9 0)
-		(mirror x)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8236,7 +8247,7 @@
 		(dnp no)
 		(uuid "4934fb7b-de6b-4735-91f5-fe16892e4112")
 		(property "Reference" "D6"
-			(at 31.4325 82.55 0)
+			(at 32.0675 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8244,7 +8255,7 @@
 			)
 		)
 		(property "Value" "MUR160"
-			(at 31.4325 85.09 0)
+			(at 32.0675 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8252,7 +8263,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
-			(at 31.75 84.455 0)
+			(at 31.75 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10696,7 +10707,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u-25V"
+		(property "Value" "100uF-25V"
 			(at 59.69 64.516 0)
 			(effects
 				(font
@@ -11946,7 +11957,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u-35V"
+		(property "Value" "10u-35V"
 			(at 57.404 94.234 0)
 			(effects
 				(font
@@ -13116,7 +13127,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.3k"
+		(property "Value" "(2k - 10k)"
 			(at 156.21 140.9701 0)
 			(effects
 				(font
