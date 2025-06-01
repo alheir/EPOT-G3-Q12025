@@ -5615,73 +5615,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDC")
-		(at 60.96 168.91 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "06ecd94d-c1f2-47f6-b538-64d185fb83d7")
-		(property "Reference" "#PWR028"
-			(at 57.15 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VIC"
-			(at 64.77 168.9099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 60.96 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f10e6fb7-ebc5-4421-bfce-923d6d06274d")
-		)
-		(instances
-			(project "inverter"
-				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 229.87 116.84 0)
 		(unit 1)
@@ -6120,6 +6053,73 @@
 			(project "inverter"
 				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDC")
+		(at 60.96 110.49 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "112b2766-d0cd-40c8-b28a-42a1710a3ebd")
+		(property "Reference" "#PWR018"
+			(at 57.15 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDRV"
+			(at 64.77 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDC\""
+			(at 60.96 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ec3fe73-7e2f-4b89-a458-d355853787e6")
+		)
+		(instances
+			(project "inverter"
+				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6939,72 +6939,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDC")
-		(at 58.42 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "39c49692-df0e-4c1f-9792-2ceafca8ae3f")
-		(property "Reference" "#PWR026"
-			(at 58.42 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VIC"
-			(at 58.42 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 58.42 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b7f0962f-f71c-414a-8688-56468c7090fe")
-		)
-		(instances
-			(project "inverter"
-				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 111.76 166.37 0)
 		(unit 1)
@@ -7631,16 +7565,16 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 60.96 110.49 270)
+		(at 60.96 168.91 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4dc9c87a-3bf0-4cfb-ae2a-fe9fac981f21")
-		(property "Reference" "#PWR018"
-			(at 57.15 110.49 0)
+		(uuid "4f48939d-c4f6-4987-bbb3-ef0c6d903e4e")
+		(property "Reference" "#PWR028"
+			(at 57.15 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7648,8 +7582,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VIC"
-			(at 64.77 110.4899 90)
+		(property "Value" "VDRV"
+			(at 64.77 168.9099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7658,7 +7592,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 110.49 0)
+			(at 60.96 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7667,7 +7601,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 110.49 0)
+			(at 60.96 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7676,7 +7610,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 60.96 110.49 0)
+			(at 60.96 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7685,12 +7619,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "948e6e18-d552-4982-975c-be52b06bfa76")
+			(uuid "e8ccc649-7d95-4e8b-adfb-f257a761564f")
 		)
 		(instances
 			(project "inverter"
 				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
-					(reference "#PWR018")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -8126,6 +8060,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDC")
+		(at 58.42 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58a09eb5-ed8d-4db2-a5fc-ce18dea258b7")
+		(property "Reference" "#PWR026"
+			(at 58.42 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDRV"
+			(at 58.42 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDC\""
+			(at 58.42 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc43d01f-4cac-4ef0-a3b9-ea6d1474cd70")
+		)
+		(instances
+			(project "inverter"
+				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:Earth")
 		(at 35.56 124.46 0)
 		(unit 1)
@@ -8432,72 +8432,6 @@
 			(project "inverter"
 				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
 					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDC")
-		(at 58.42 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f82bddb-75f9-41f7-9642-cc5e667bd863")
-		(property "Reference" "#PWR016"
-			(at 58.42 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VIC"
-			(at 58.42 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 58.42 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e5132d99-bf17-4401-9794-5b442b073aa2")
-		)
-		(instances
-			(project "inverter"
-				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
-					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -11037,6 +10971,72 @@
 			(project "inverter"
 				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDC")
+		(at 58.42 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9c912dd-e06b-4ec7-891b-26ba85228dae")
+		(property "Reference" "#PWR016"
+			(at 58.42 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDRV"
+			(at 58.42 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDC\""
+			(at 58.42 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "246f8399-c5d1-461e-9ba2-8927f6baee36")
+		)
+		(instances
+			(project "inverter"
+				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
