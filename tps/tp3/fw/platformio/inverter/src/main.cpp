@@ -1,131 +1,110 @@
 #include <Arduino.h>
-#include <stdio.h>
-#include "config.h"
-#include "sine_lut.h"
-#include "esp_system.h"
-#include "esp_attr.h"
-
 #include "driver/mcpwm.h"
-#include "soc/mcpwm_reg.h"
-#include "soc/mcpwm_struct.h"
 
-static int mf = 111;
-static float ma = 0.5f;
-static int sample_offset = 1;
+#define A_HIGH 15
+#define A_LOW   2
+#define B_HIGH  4
+#define B_LOW  16
+#define C_HIGH 17
+#define C_LOW   5
 
-static mcpwm_config_t timerConf = {
-    .frequency = mf * 50 * 2,
+#define POTENTIOMETER_PIN 34
+#define FREQ_MIN 5.0
+#define FREQ_MAX 50.0
+
+#define SINE_STEPS 100
+float freq = 10;
+float vdc = 310.0;
+float vf_ratio = 10.0;
+float ma = 0.8;
+uint16_t sineA[SINE_STEPS], sineB[SINE_STEPS], sineC[SINE_STEPS];
+volatile int sineIndex = 0;
+hw_timer_t *timer = NULL;
+
+void generateSineTables() {
+  for (int i = 0; i < SINE_STEPS; i++) {
+    float angle = 2 * PI * i / SINE_STEPS;
+    float base = ma * 50.0;
+    sineA[i] = 50 + base * sin(angle);
+    sineB[i] = 50 + base * sin(angle - 2 * PI / 3);
+    sineC[i] = 50 + base * sin(angle + 2 * PI / 3);
+  }
+}
+
+void IRAM_ATTR onTimer() {
+  mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_OPR_A, sineA[sineIndex]);
+  mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_OPR_A, sineB[sineIndex]);
+  mcpwm_set_duty(MCPWM_UNIT_1, MCPWM_TIMER_0, MCPWM_OPR_A, sineC[sineIndex]);
+  sineIndex = (sineIndex + 1) % SINE_STEPS;
+}
+
+void setupPWM() {
+  mcpwm_config_t pwm_config = {
+    .frequency = 20000,
     .cmpr_a = 50.0,
     .cmpr_b = 50.0,
     .duty_mode = MCPWM_DUTY_MODE_0,
     .counter_mode = MCPWM_UP_DOWN_COUNTER
-};
+  };
 
-static mcpwm_pin_config_t pinConfig = {
-    .mcpwm0a_out_num = FASE_R_HIGH_PIN,
-    .mcpwm0b_out_num = FASE_R_LOW_PIN,
-    .mcpwm1a_out_num = FASE_S_HIGH_PIN,
-    .mcpwm1b_out_num = FASE_S_LOW_PIN,
-    .mcpwm2a_out_num = FASE_T_HIGH_PIN,
-    .mcpwm2b_out_num = FASE_T_LOW_PIN
-};
+  // Fase A
+  mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM0A, A_HIGH);
+  mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM0B, A_LOW);
+  mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_0, &pwm_config);
+  mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 100, 100);
 
-static mcpwm_sync_config_t sync0_conf = {.sync_sig = MCPWM_SELECT_NO_INPUT, .timer_val = 0, .count_direction = MCPWM_TIMER_DIRECTION_UP};
-static mcpwm_sync_config_t sync1_conf = {.sync_sig = MCPWM_SELECT_TIMER0_SYNC, .timer_val = 0, .count_direction = MCPWM_TIMER_DIRECTION_UP};
-static mcpwm_sync_config_t sync2_conf = {.sync_sig = MCPWM_SELECT_TIMER0_SYNC, .timer_val = 0, .count_direction = MCPWM_TIMER_DIRECTION_UP};
+  // Fase B
+  mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM1A, B_HIGH);
+  mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM1B, B_LOW);
+  mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_1, &pwm_config);
+  mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 100, 100);
 
-static void IRAM_ATTR mcpwm_callback(void *);
-
-void init_mcpwm()
-{
-    mcpwm_set_pin(MCPWM_UNIT_0, &pinConfig);
-
-    mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_0, &timerConf);
-    mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_1, &timerConf);
-    mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_2, &timerConf);
-
-    mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 5, 5);
-    mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 5, 5);
-    mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_2, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 5, 5);
-
-    mcpwm_sync_configure(MCPWM_UNIT_0, MCPWM_TIMER_0, &sync0_conf);
-    mcpwm_sync_configure(MCPWM_UNIT_0, MCPWM_TIMER_1, &sync1_conf);
-    mcpwm_sync_configure(MCPWM_UNIT_0, MCPWM_TIMER_2, &sync2_conf);
-    mcpwm_set_timer_sync_output(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_SWSYNC_SOURCE_TEZ);
-
-    sample_offset = (int)roundf((float)LUT_SIZE / (float)mf);
-
-    mcpwm_isr_register(MCPWM_UNIT_0, mcpwm_callback, NULL, ESP_INTR_FLAG_IRAM, NULL);
-    MCPWM0.int_ena.timer0_tez_int_ena = 1;
+  // Fase C
+  mcpwm_gpio_init(MCPWM_UNIT_1, MCPWM0A, C_HIGH);
+  mcpwm_gpio_init(MCPWM_UNIT_1, MCPWM0B, C_LOW);
+  mcpwm_init(MCPWM_UNIT_1, MCPWM_TIMER_0, &pwm_config);
+  mcpwm_deadtime_enable(MCPWM_UNIT_1, MCPWM_TIMER_0, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 100, 100);
 }
 
-void start_gen()
-{
-    mcpwm_start(MCPWM_UNIT_0, MCPWM_TIMER_0);
-    mcpwm_start(MCPWM_UNIT_0, MCPWM_TIMER_1);
-    mcpwm_start(MCPWM_UNIT_0, MCPWM_TIMER_2);
+float readPotentiometerFreq() {
+  int adc = analogRead(POTENTIOMETER_PIN);
+  return FREQ_MIN + ((float)adc / 4095.0) * (FREQ_MAX - FREQ_MIN);
 }
 
-void stop_gen()
-{
-    mcpwm_stop(MCPWM_UNIT_0, MCPWM_TIMER_0);
-    mcpwm_stop(MCPWM_UNIT_0, MCPWM_TIMER_1);
-    mcpwm_stop(MCPWM_UNIT_0, MCPWM_TIMER_2);
+void updateSPWM(float newFreq) {
+  freq = newFreq;
+  ma = vf_ratio * freq / vdc;
+  if (ma > 1.0) ma = 1.0;
+  generateSineTables();
+
+  int updateRate = freq * SINE_STEPS;
+  int period_us = 1e6 / updateRate;
+  timerAlarmWrite(timer, period_us, true);
 }
 
-void set_ma(float _ma)
-{
-    ma = fmaxf(0.0f, fminf(_ma, 1.0f));  // Clamp between 0 and 1
+void setup() {
+  Serial.begin(115200);
+  analogReadResolution(12);
+  pinMode(POTENTIOMETER_PIN, INPUT);
+  setupPWM();
+  generateSineTables();
+
+  timer = timerBegin(0, 80, true);
+  timerAttachInterrupt(timer, &onTimer, true);
+  int updateRate = freq * SINE_STEPS;
+  timerAlarmWrite(timer, 1e6 / updateRate, true);
+  timerAlarmEnable(timer);
 }
 
-float get_ma()
-{
-    return ma;
-}
+void loop() {
+  float newFreq = readPotentiometerFreq();
+  if (abs(newFreq - freq) > 0.2) {
+    updateSPWM(newFreq);
+    Serial.print("Freq = ");
+    Serial.print(freq);
+    Serial.print(" Hz | m_a = ");
+    Serial.println(ma);
+  }
 
-void set_mf(int _mf)
-{
-    if (_mf <= 0) return;
-    mf = _mf;
-    int freq = mf * 50 * 2;
-    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_0, freq);
-    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_1, freq);
-    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_2, freq);
-    sample_offset = (int)roundf((float)LUT_SIZE / (float)mf);
-}
-
-int get_mf()
-{
-    return mf;
-}
-
-static void IRAM_ATTR mcpwm_callback(void *)
-{
-    static int counterR = 0;
-    static int counterS = (LUT_SIZE / 3) % LUT_SIZE;
-    static int counterT = (2 * LUT_SIZE / 3) % LUT_SIZE;
-
-    if (MCPWM0.int_st.timer0_tez_int_st)
-    {
-        MCPWM0.int_clr.timer0_tez_int_clr = 1;
-
-        float dutyR = (sine_lut[counterR] * ma) + 50.0f;
-        float dutyS = (sine_lut[counterS] * ma) + 50.0f;
-        float dutyT = (sine_lut[counterT] * ma) + 50.0f;
-
-        dutyR = fminf(fmaxf(dutyR, 0.0f), 100.0f);
-        dutyS = fminf(fmaxf(dutyS, 0.0f), 100.0f);
-        dutyT = fminf(fmaxf(dutyT, 0.0f), 100.0f);
-
-        mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_GEN_A, dutyR);
-        mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_GEN_B, dutyR);
-        mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_GEN_A, dutyS);
-        mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_GEN_B, dutyS);
-        mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_2, MCPWM_GEN_A, dutyT);
-        mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_2, MCPWM_GEN_B, dutyT);
-
-        counterR = (counterR + sample_offset) % LUT_SIZE;
-        counterS = (counterS + sample_offset) % LUT_SIZE;
-        counterT = (counterT + sample_offset) % LUT_SIZE;
-    }
+  delay(100);
 }
