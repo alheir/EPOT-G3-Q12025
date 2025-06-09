@@ -10,10 +10,11 @@
 #include "soc/mcpwm_struct.h"
 
 static uint32_t mf = 111;
-static float ma = 0.5f;
+static float ma = 1.0f;
+static float freq = 100.0f;
 static int sample_offset = 1;
 
-static mcpwm_config_t timerConf = {.frequency = mf * 50 * 2, .cmpr_a = 50.0, .cmpr_b = 50.0, .duty_mode = MCPWM_DUTY_MODE_0, .counter_mode = MCPWM_UP_DOWN_COUNTER};
+static mcpwm_config_t timerConf = {.frequency = mf * freq * 2, .cmpr_a = 50.0, .cmpr_b = 50.0, .duty_mode = MCPWM_DUTY_MODE_0, .counter_mode = MCPWM_UP_DOWN_COUNTER};
 
 static mcpwm_pin_config_t pinConfig = {.mcpwm0a_out_num = FASE_R_HIGH_PIN,
                                        .mcpwm0b_out_num = FASE_R_LOW_PIN,
@@ -74,9 +75,9 @@ float get_ma()
 void set_mf(int _mf)
 {
     mf = _mf;
-    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_0, mf * 50 * 2);
-    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_1, mf * 50 * 2);
-    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_2, mf * 50 * 2);
+    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_0, mf * freq * 2);
+    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_1, mf * freq * 2);
+    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_2, mf * freq * 2);
     sample_offset = (int)round(((float)LUT_SIZE) / (float)mf);
 }
 
@@ -85,35 +86,49 @@ int get_mf()
     return mf;
 }
 
+float get_freq() { return freq; }
+
+void set_freq(float _freq)
+{
+    freq = _freq;
+    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_0, mf * freq * 2);
+    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_1, mf * freq * 2);
+    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_2, mf * freq * 2);
+    sample_offset = (int)round(((float)LUT_SIZE) / (float)mf);
+}
+
 static void IRAM_ATTR mcpwm_callback(void *)
 {
     static int counterR = 0;
     static int counterS = (LUT_SIZE - 1) / 3;
-    static int counterT = (LUT_SIZE - 1) / 3 * 2;
-    static float dutyR = 0.0f;
-    static float dutyS = 0.0f;
-    static float dutyT = 0.0f;
+    static int counterT = (LUT_SIZE - 1) * 2 / 3;
 
-    if (MCPWM0.int_st.timer0_tez_int_st) // llego a cero el contador
+    if (MCPWM0.int_st.timer0_tez_int_st) // Counter reached zero
     {
-        MCPWM0.int_clr.timer0_tez_int_clr = 1; // Clear de interrupt flag
-        dutyR = (sine_lut[counterR] * ma) + 50.0f;
-        dutyS = (sine_lut[counterS] * ma) + 50.0f;
-        dutyT = (sine_lut[counterT] * ma) + 50.0f;
+        MCPWM0.int_clr.timer0_tez_int_clr = 1; // Clear interrupt
 
-        dutyR = dutyR < 0 ? 0 : dutyR;
-        dutyS = dutyS < 0 ? 0 : dutyS;
-        dutyT = dutyT < 0 ? 0 : dutyT;
+        // Precompute sample values
+        float lutR = sine_lut[counterR]/50.0f; // Scale to 0-1 range
+        float lutS = sine_lut[counterS]/50.0f;
+        float lutT = sine_lut[counterT]/50.0f;
 
-        mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_GEN_A, dutyR);
-        mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_GEN_B, dutyR);
-        mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_GEN_A, dutyS);
-        mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_GEN_B, dutyS);
-        mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_2, MCPWM_GEN_A, dutyT);
-        mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_2, MCPWM_GEN_B, dutyT);
+        // Compute duty cycles
+        float dutyR = 75.0f;
+        float dutyS = fmaxf((lutS * ma) + 50.0f, 0.0f);
+        float dutyT = fmaxf((lutT * ma) + 50.0f, 0.0f);
 
-        counterR = counterR + sample_offset >= LUT_SIZE - 1 ? counterR + sample_offset - LUT_SIZE - 1 : counterR + sample_offset;
-        counterS = counterS + sample_offset >= LUT_SIZE - 1 ? counterS + sample_offset - LUT_SIZE - 1 : counterS + sample_offset;
-        counterT = counterT + sample_offset >= LUT_SIZE - 1 ? counterT + sample_offset - LUT_SIZE - 1 : counterT + sample_offset;
+        // Update PWM duties
+        const mcpwm_timer_t timers[] = {MCPWM_TIMER_0, MCPWM_TIMER_1, MCPWM_TIMER_2};
+        const float duties[] = {dutyR, dutyS, dutyT};
+
+        for (int i = 0; i < 3; ++i) {
+            mcpwm_set_duty(MCPWM_UNIT_0, timers[i], MCPWM_GEN_A, duties[i]);
+            mcpwm_set_duty(MCPWM_UNIT_0, timers[i], MCPWM_GEN_B, duties[i]);
+        }
+
+        // Advance counters with wraparound
+        counterR = (counterR + sample_offset) % LUT_SIZE;
+        counterS = (counterS + sample_offset) % LUT_SIZE;
+        counterT = (counterT + sample_offset) % LUT_SIZE;
     }
 }

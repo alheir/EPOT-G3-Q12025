@@ -10,5 +10,8 @@ void set_ma(float ma);
 float get_ma();
 void set_mf(int mf);
 int get_mf();
+float get_freq();
+void set_freq(float freq);
+
 
 #endif
