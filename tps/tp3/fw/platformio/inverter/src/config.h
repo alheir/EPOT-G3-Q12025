@@ -10,6 +10,6 @@
 #define FASE_T_LOW_PIN GPIO_NUM_5
 #define POTENTIOMETER_PIN GPIO_NUM_34
 
-#define LUT_SIZE 555
+#define LUT_SIZE 3330
 
 #endif

@@ -9,12 +9,14 @@
 #include "soc/mcpwm_reg.h"
 #include "soc/mcpwm_struct.h"
 
-static uint32_t mf = 111;
+static float mf = 111.0f;
 static float ma = 1.0f;
-static float freq = 100.0f;
+static float carrier = 20000.0f;
+static float true_carrier = 20833.33f;
 static int sample_offset = 1;
+static float VtoF= 
 
-static mcpwm_config_t timerConf = {.frequency = mf * freq * 2, .cmpr_a = 50.0, .cmpr_b = 50.0, .duty_mode = MCPWM_DUTY_MODE_0, .counter_mode = MCPWM_UP_DOWN_COUNTER};
+static mcpwm_config_t timerConf = {.frequency = 2 * carrier, .cmpr_a = 50.0, .cmpr_b = 50.0, .duty_mode = MCPWM_DUTY_MODE_0, .counter_mode = MCPWM_UP_DOWN_COUNTER};
 
 static mcpwm_pin_config_t pinConfig = {.mcpwm0a_out_num = FASE_R_HIGH_PIN,
                                        .mcpwm0b_out_num = FASE_R_LOW_PIN,
@@ -72,29 +74,29 @@ float get_ma()
     return ma;
 }
 
-void set_mf(int _mf)
-{
-    mf = _mf;
-    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_0, mf * freq * 2);
-    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_1, mf * freq * 2);
-    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_2, mf * freq * 2);
-    sample_offset = (int)round(((float)LUT_SIZE) / (float)mf);
-}
-
 int get_mf()
 {
     return mf;
 }
 
-float get_freq() { return freq; }
+float get_freq() { return true_carrier * sample_offset / LUT_SIZE; }
 
-void set_freq(float _freq)
+void set_freq(int _freq)
 {
-    freq = _freq;
-    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_0, mf * freq * 2);
-    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_1, mf * freq * 2);
-    mcpwm_set_frequency(MCPWM_UNIT_0, MCPWM_TIMER_2, mf * freq * 2);
-    sample_offset = (int)round(((float)LUT_SIZE) / (float)mf);
+
+    mf = true_carrier / (float) _freq;
+
+    if (mf < 1)
+    {
+        mf = 1;
+    }
+    Serial.printf("Carrier: ");
+    Serial.println(carrier);
+    Serial.printf("mf: ");
+    Serial.println(mf);
+    sample_offset = (int)round((LUT_SIZE) * _freq / (float) true_carrier);
+    Serial.printf("Sample offset: ");
+    Serial.println(sample_offset);
 }
 
 static void IRAM_ATTR mcpwm_callback(void *)
@@ -108,14 +110,14 @@ static void IRAM_ATTR mcpwm_callback(void *)
         MCPWM0.int_clr.timer0_tez_int_clr = 1; // Clear interrupt
 
         // Precompute sample values
-        float lutR = sine_lut[counterR]/50.0f; // Scale to 0-1 range
-        float lutS = sine_lut[counterS]/50.0f;
-        float lutT = sine_lut[counterT]/50.0f;
+        float lutR = sine_lut[counterR];
+        float lutS = sine_lut[counterS];
+        float lutT = sine_lut[counterT];
 
         // Compute duty cycles
-        float dutyR = 75.0f;
-        float dutyS = fmaxf((lutS * ma) + 50.0f, 0.0f);
-        float dutyT = fmaxf((lutT * ma) + 50.0f, 0.0f);
+        float dutyR = lutR * ma * 100.0f; 
+        float dutyS = lutS * ma * 100.0f;  // 50 to check for oscillator freq
+        float dutyT = lutT * ma * 100.0f;
 
         // Update PWM duties
         const mcpwm_timer_t timers[] = {MCPWM_TIMER_0, MCPWM_TIMER_1, MCPWM_TIMER_2};
