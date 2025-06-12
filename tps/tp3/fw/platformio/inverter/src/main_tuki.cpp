@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include "pwm_gen.h"
 
+bool var_freq = true;  // Variable frequency mode
 void setup()
 {
   Serial.begin(115200);  // Initialize serial communication
@@ -16,18 +17,20 @@ void loop()
   unsigned long now = millis();
 
   // Print once per second
-  if (now - lastPrint > 1000) {
+  if (now - lastPrint > 2000) {
     lastPrint = now;
-    int adc_value = analogRead(34);
-    Serial.print("ADC Value: ");
-    Serial.println(adc_value);
-    int new_freq = map(adc_value, 0, 4095, 50, 300);
-    Serial.print("Mapped Frequency: ");
-    Serial.println(new_freq);
-    if (new_freq-get_freq() > -5 || new_freq-get_freq() < 5) {
-      set_freq(new_freq);
+    if (var_freq) {
+      int adc_value = analogRead(34);
+      Serial.print("ADC Value: ");
+      Serial.println(adc_value);
+      int new_freq = map(adc_value, 0, 4095, 50, 200);
+      Serial.print("Mapped Frequency: ");
+      Serial.println(new_freq);
+      if (new_freq-(int)get_freq() > -5 || new_freq-(int)get_freq() < 5) {
+        set_freq(new_freq);
+      }
     }
-    
+
     Serial.print("Current Frequency: ");
     Serial.println(get_freq());
 

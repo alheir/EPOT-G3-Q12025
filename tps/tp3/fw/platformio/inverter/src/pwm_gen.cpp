@@ -14,7 +14,7 @@ static float ma = 1.0f;
 static float carrier = 20000.0f;
 static float true_carrier = 20833.33f;
 static int sample_offset = 1;
-static float VtoF= 
+static float VtoF= 1.0/200.0;
 
 static mcpwm_config_t timerConf = {.frequency = 2 * carrier, .cmpr_a = 50.0, .cmpr_b = 50.0, .duty_mode = MCPWM_DUTY_MODE_0, .counter_mode = MCPWM_UP_DOWN_COUNTER};
 
@@ -97,6 +97,10 @@ void set_freq(int _freq)
     sample_offset = (int)round((LUT_SIZE) * _freq / (float) true_carrier);
     Serial.printf("Sample offset: ");
     Serial.println(sample_offset);
+    float true_freq= true_carrier * sample_offset / LUT_SIZE;
+    ma= VtoF * _freq;   
+    Serial.printf("ma ");
+    Serial.println(ma);
 }
 
 static void IRAM_ATTR mcpwm_callback(void *)
