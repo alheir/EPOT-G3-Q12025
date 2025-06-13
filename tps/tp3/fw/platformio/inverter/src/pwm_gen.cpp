@@ -14,7 +14,7 @@ static float ma = 1.0f;
 static int carrier = 20000;
 static float true_carrier = 20833.33f;
 static int sample_offset = 1;
-static float VtoF= 0.75f/100.0f;
+static float VtoF= 1.0f/100.0f;
 
 static mcpwm_config_t timerConf = {.frequency = 2 * carrier, .cmpr_a = 50.0, .cmpr_b = 50.0, .duty_mode = MCPWM_DUTY_MODE_0, .counter_mode = MCPWM_UP_DOWN_COUNTER};
 
@@ -34,10 +34,18 @@ static void IRAM_ATTR mcpwm_callback(void *);
 void init_mcpwm()
 {
     mcpwm_set_pin(MCPWM_UNIT_0, &pinConfig);
+
+    mcpwm_timer_set_resolution(MCPWM_UNIT_0, MCPWM_TIMER_0, 10000000);
+    mcpwm_timer_set_resolution(MCPWM_UNIT_0, MCPWM_TIMER_1, 10000000);
+    mcpwm_timer_set_resolution(MCPWM_UNIT_0, MCPWM_TIMER_2, 10000000);
+
+    mcpwm_group_set_resolution(MCPWM_UNIT_0, 100000000);
+
     mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_0, &timerConf);
     mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_1, &timerConf);
     mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_2, &timerConf);
 
+ 
     mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 5, 5);
     mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 5, 5);
     mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_2, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 5, 5);
@@ -83,7 +91,7 @@ float get_freq() { return((float) (true_carrier * sample_offset / LUT_SIZE)); }
 
 void set_freq(float _freq)
 {
-    if (_freq >= 15 && _freq < 100)
+    if (_freq >= 10 && _freq < 100)
     {
         mf = true_carrier / (float) _freq;
 
@@ -97,16 +105,19 @@ void set_freq(float _freq)
         //Serial.println(mf);
         sample_offset = (int)round((LUT_SIZE) * _freq / (float) true_carrier);
         //Serial.printf("Sample offset: ");
-        //Serial.println(sample_offset);
+        // Serial.println(LUT_SIZE);
+        // Serial.println(_freq);
+        // Serial.println(sample_offset);
+        // Serial.println(true_carrier);
         float true_freq= true_carrier * sample_offset / LUT_SIZE;
         ma= VtoF * true_freq; // Adjust ma based on frequency
         if (ma > 1.0f)
         {
             ma = 1.0f; // Limit ma to a maximum of 1.0
         }
-        else if (ma <  20.0f/100.0f)
+        else if (ma <  10.0f/100.0f)
         {
-            ma = 20.0f/100.0f; // Limit ma to a minimum of 0.0
+            ma = 10.0f/100.0f; // Limit ma to a minimum of 0.0
         }
         //Serial.printf("ma ");
         //Serial.println(ma);
