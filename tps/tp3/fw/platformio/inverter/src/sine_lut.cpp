@@ -4,7 +4,7 @@
  * https://github.com/ppelikan/drlut
  **/
 // Formula: sin(2*pi*t/T) 
-const float_t sine_lut[LUT_SIZE] = {
+const float sine_lut[LUT_SIZE] = {
  0.0000000000, 0.0015339802, 0.0030679568, 0.0046019261,
  0.0061358846, 0.0076698287, 0.0092037548, 0.0107376592,
  0.0122715383, 0.0138053885, 0.0153392063, 0.0168729879,

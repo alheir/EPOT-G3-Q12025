@@ -9,12 +9,12 @@
 #include "soc/mcpwm_reg.h"
 #include "soc/mcpwm_struct.h"
 
-static float mf = 3.0f;
+static float mf = 111.0f;
 static float ma = 1.0f;
 static int carrier = 20000;
 static float true_carrier = 20833.33f;
 static int sample_offset = 1;
-static float VtoF= 1.0/100.0;
+static float VtoF= 0.75f/100.0f;
 
 static mcpwm_config_t timerConf = {.frequency = 2 * carrier, .cmpr_a = 50.0, .cmpr_b = 50.0, .duty_mode = MCPWM_DUTY_MODE_0, .counter_mode = MCPWM_UP_DOWN_COUNTER};
 
@@ -79,11 +79,11 @@ int get_mf()
     return mf;
 }
 
-float get_freq() { return true_carrier * sample_offset / LUT_SIZE; }
+float get_freq() { return((float) (true_carrier * sample_offset / LUT_SIZE)); }
 
-void set_freq(int _freq)
+void set_freq(float _freq)
 {
-    if (_freq > 20 && _freq < 100)
+    if (_freq >= 15 && _freq < 100)
     {
         mf = true_carrier / (float) _freq;
 
@@ -91,25 +91,25 @@ void set_freq(int _freq)
         {
             mf = 1;
         }
-        // Serial.printf("Carrier: ");
-        // Serial.println(carrier);
-        Serial.printf("mf: ");
-        Serial.println(mf);
+        // //Serial.printf("Carrier: ");
+        // //Serial.println(carrier);
+        //Serial.printf("mf: ");
+        //Serial.println(mf);
         sample_offset = (int)round((LUT_SIZE) * _freq / (float) true_carrier);
-        Serial.printf("Sample offset: ");
-        Serial.println(sample_offset);
+        //Serial.printf("Sample offset: ");
+        //Serial.println(sample_offset);
         float true_freq= true_carrier * sample_offset / LUT_SIZE;
         ma= VtoF * true_freq; // Adjust ma based on frequency
         if (ma > 1.0f)
         {
             ma = 1.0f; // Limit ma to a maximum of 1.0
         }
-        else if (ma <  1/100.0f)
+        else if (ma <  20.0f/100.0f)
         {
-            ma = 1/100.0f; // Limit ma to a minimum of 0.0
+            ma = 20.0f/100.0f; // Limit ma to a minimum of 0.0
         }
-        Serial.printf("ma ");
-        Serial.println(ma);
+        //Serial.printf("ma ");
+        //Serial.println(ma);
     }
 }
 
