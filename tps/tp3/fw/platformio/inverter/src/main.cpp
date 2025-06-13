@@ -1,110 +1,49 @@
-// #include <Arduino.h>
-// #include "driver/mcpwm.h"
+// ------- SPWM Generator --------------------------- //
+//  Grupo: Cílfone, Di Sanzo, Figueroa, Gioia, Heir
+// 22.28 - Electrónica de Potencia - ITBA
+// ---------------------------------------------------//
 
-// #define A_HIGH 15
-// #define A_LOW   2
-// #define B_HIGH  4
-// #define B_LOW  16
-// #define C_HIGH 17
-// #define C_LOW   5
+#include <Arduino.h>
+#include "pwm_gen.h"
 
-// #define POTENTIOMETER_PIN 34
-// #define FREQ_MIN 5.0
-// #define FREQ_MAX 50.0
+bool var_freq = true;  // Variable frequency mode
+void setup()
+{
+  Serial.begin(115200);  // Initialize serial communication
+  init_mcpwm();
+  start_gen();
+  set_freq(20.0);  // Set initial frequency
+}
 
-// #define SINE_STEPS 1000
-// float freq = 100.0;
-// float vdc = 310.0;
-// float vf_ratio = 10.0;
-// float ma = 0.8;
-// uint16_t sineA[SINE_STEPS], sineB[SINE_STEPS], sineC[SINE_STEPS];
-// volatile int sineIndex = 0;
-// hw_timer_t *timer = NULL;
+void loop()
+{
+  static unsigned long lastPrint = 0;
+  static int smoothed_adc = 0;
+  static const float alpha = 0.8;  // Smoothing factor: 0 < alpha <= 1
 
-// void generateSineTables() {
-//   for (int i = 0; i < SINE_STEPS; i++) {
-//     float angle = 2 * PI * i / SINE_STEPS;
-//     float base = ma * 50.0;
-//     sineA[i] = 50 + base * sin(angle);
-//     sineB[i] = 50 + base * sin(angle - 2 * PI / 3);
-//     sineC[i] = 50 + base * sin(angle + 2 * PI / 3);
-//   }
-// }
+  unsigned long now = millis();
 
-// void IRAM_ATTR onTimer() {
-//   mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_OPR_A, sineA[sineIndex]);
-//   mcpwm_set_duty(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_OPR_A, sineB[sineIndex]);
-//   mcpwm_set_duty(MCPWM_UNIT_1, MCPWM_TIMER_0, MCPWM_OPR_A, sineC[sineIndex]);
-//   sineIndex = (sineIndex + 1) % SINE_STEPS;
-// }
+  // Print and update once every 500 ms
+  if (now - lastPrint > 100) {
+    lastPrint = now;
 
-// void setupPWM() {
-//   mcpwm_config_t pwm_config = {
-//     .frequency = 20000,
-//     .cmpr_a = 50.0,
-//     .cmpr_b = 50.0,
-//     .duty_mode = MCPWM_DUTY_MODE_0,
-//     .counter_mode = MCPWM_UP_DOWN_COUNTER
-//   };
+    if (var_freq) {
+      int adc_value = analogRead(34);
+      smoothed_adc = alpha * adc_value + (1 - alpha) * smoothed_adc;
 
-//   // Fase A
-//   mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM0A, A_HIGH);
-//   mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM0B, A_LOW);
-//   mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_0, &pwm_config);
-//   mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 100, 100);
+      int new_freq = map(smoothed_adc, 0, 4095, 20, 100);
+      int current_freq = (int)get_freq();
 
-//   // Fase B
-//   mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM1A, B_HIGH);
-//   mcpwm_gpio_init(MCPWM_UNIT_0, MCPWM1B, B_LOW);
-//   mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_1, &pwm_config);
-//   mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 100, 100);
+      if (abs(new_freq - current_freq) > 5 && abs(new_freq - current_freq) < 20 && new_freq >= 20 && new_freq <= 100) {
+        Serial.print("New frequency: ");
+        Serial.println(new_freq);
+        Serial.print("Last frequency: ");
+        Serial.println(current_freq);
+        set_freq(new_freq);
+      }
+    }
 
-//   // Fase C
-//   mcpwm_gpio_init(MCPWM_UNIT_1, MCPWM0A, C_HIGH);
-//   mcpwm_gpio_init(MCPWM_UNIT_1, MCPWM0B, C_LOW);
-//   mcpwm_init(MCPWM_UNIT_1, MCPWM_TIMER_0, &pwm_config);
-//   mcpwm_deadtime_enable(MCPWM_UNIT_1, MCPWM_TIMER_0, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 100, 100);
-// }
-
-// float readPotentiometerFreq() {
-//   int adc = analogRead(POTENTIOMETER_PIN);
-//   return FREQ_MIN + ((float)adc / 4095.0) * (FREQ_MAX - FREQ_MIN);
-// }
-
-// void updateSPWM(float newFreq) {
-//   freq = newFreq;
-//   ma = vf_ratio * freq / vdc;
-//   if (ma > 1.0) ma = 1.0;
-//   generateSineTables();
-
-//   int updateRate = freq * SINE_STEPS;
-//   int period_us = 1e6 / updateRate;
-//   timerAlarmWrite(timer, period_us, true);
-// }
-
-// void setup() {
-//   Serial.begin(115200);
-//   analogReadResolution(12);
-//   pinMode(POTENTIOMETER_PIN, INPUT);
-//   setupPWM();
-//   generateSineTables();
-
-//   timer = timerBegin(0, 80, true);
-//   timerAttachInterrupt(timer, &onTimer, true);
-//   int updateRate = freq * SINE_STEPS;
-//   timerAlarmWrite(timer, 1e6 / updateRate, true);
-//   timerAlarmEnable(timer);
-// }
-
-// void loop() {
-//   float newFreq = readPotentiometerFreq();
-//   if (abs(newFreq - freq) > 0.2) {
-//     updateSPWM(newFreq);
-//     Serial.print("Freq = ");
-//     Serial.print(freq);
-//     Serial.print(" Hz | m_a = ");
-//     Serial.println(ma);
-//   }
-
-//   delay(100);
-// }
+    Serial.print("Current Frequency: ");
+    Serial.println(get_freq());
+  }
+}
