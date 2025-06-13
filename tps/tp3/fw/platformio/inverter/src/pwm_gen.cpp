@@ -46,9 +46,9 @@ void init_mcpwm()
     mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_2, &timerConf);
 
  
-    mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 5, 5);
-    mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 5, 5);
-    mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_2, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 5, 5);
+    mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_0, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 50, 50);
+    mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_1, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 50, 50);
+    mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_2, MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE, 50, 50);
     mcpwm_sync_configure(MCPWM_UNIT_0, MCPWM_TIMER_0, &sync0_conf);
     mcpwm_sync_configure(MCPWM_UNIT_0, MCPWM_TIMER_1, &sync1_conf);
     mcpwm_sync_configure(MCPWM_UNIT_0, MCPWM_TIMER_2, &sync2_conf);
