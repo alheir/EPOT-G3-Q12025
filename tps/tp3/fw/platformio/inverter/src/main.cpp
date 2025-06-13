@@ -29,14 +29,15 @@ void loop()
 
     if (var_freq) {
       int adc_value = analogRead(34);
-      smoothed_adc = alpha * adc_value + (1 - alpha) * smoothed_adc;
+      smoothed_adc = (int)(alpha * adc_value + (1 - alpha) * smoothed_adc);
 
       int new_freq = map(smoothed_adc, 0, 4095, 20, 100);
+      Serial.print("Reading frequency: ");
+      Serial.println(new_freq);
       int current_freq = (int)get_freq();
-
-      if (abs(new_freq - current_freq) > 5 && abs(new_freq - current_freq) < 20 && new_freq >= 20 && new_freq <= 100) {
-        Serial.print("New frequency: ");
-        Serial.println(new_freq);
+      current_freq = (current_freq < 20) ? 20 : current_freq;  // Ensure current frequency is at least 20
+      current_freq = (current_freq > 105) ? 105 : current_freq;  // Ensure current frequency does not exceed 100
+      if (abs(new_freq - current_freq) > 5 && abs(new_freq - current_freq) < 20 && new_freq >= 0 && new_freq <= 200) {
         Serial.print("Last frequency: ");
         Serial.println(current_freq);
         set_freq(new_freq);

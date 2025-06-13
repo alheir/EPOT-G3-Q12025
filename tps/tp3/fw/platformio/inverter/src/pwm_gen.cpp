@@ -9,7 +9,7 @@
 #include "soc/mcpwm_reg.h"
 #include "soc/mcpwm_struct.h"
 
-static float mf = 111.0f;
+static float mf = 3.0f;
 static float ma = 1.0f;
 static int carrier = 20000;
 static float true_carrier = 20833.33f;
