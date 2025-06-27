@@ -103,6 +103,10 @@ void process_serial_command() {
 
 void setup()
 {
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, LOW);
+  
+
   Serial.begin(115200);
   delay(250);
   
@@ -135,6 +139,17 @@ void loop()
   // Process serial commands
   process_serial_command();
 
+  if(now - lastADC > 200)
+  {
+    lastADC = now;
+    // Blink LED to indicate activity
+    digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
+    float current_freq = get_freq();
+    Serial.print("Current Frequency: ");
+    Serial.print(current_freq, 2);
+    Serial.println(" Hz");
+  }
+
   // ADC mode processing (every 50ms)
   if (adc_mode && var_freq && (now - lastADC > 500)) {
     lastADC = now;
@@ -143,11 +158,17 @@ void loop()
     smoothed_adc = (int)(alpha * (float)adc_value + (1 - alpha) * (float)smoothed_adc);
     
     float new_freq = (float)map(smoothed_adc, 0, 4095, 15, 99);
+    if(new_freq < 15.0) new_freq = 15.0;
+    if(new_freq > 99.0) new_freq = 99.0;
+
     float current_freq = get_freq();
     
     // Only update if change is significant (reduces jitter)
-    if (abs(new_freq - current_freq) > 0.5) {
+    if (abs(new_freq - current_freq) > 1.0) {
       set_freq(new_freq);
+      Serial.print("Frequency set to: ");
+      Serial.print(new_freq, 2);
+      Serial.println(" Hz");
     }
   }
 
