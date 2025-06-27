@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "TP3 - Inverter Trifásico")
-		(date "2025-06-13")
+		(date "2025-06-27")
 		(company "22.28 - Electrónica de Potencia")
 		(comment 1 "Grupo 3: CILFONE, DI SANZO, FIGUEROA, GIOIA, HEIR")
 	)
@@ -3164,156 +3164,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:Jumper_2_Bridged"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jumper_2_Bridged"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Jumper, 2-pole, closed/bridged"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Jumper_2_Bridged_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Bridged_0_1"
-				(arc
-					(start -1.524 0.254)
-					(mid 0 0.762)
-					(end 1.524 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Bridged_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Transistor_FET:IRF540N"
 			(pin_names
 				(hide yes)
@@ -5085,28 +4935,10 @@
 		(uuid "5b8a8ce4-976d-4d53-89a0-baa7dfe1910c")
 	)
 	(junction
-		(at 111.76 176.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5f7f3304-9dbe-4690-a5d4-2a5b6b676754")
-	)
-	(junction
 		(at 62.23 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "606ded5c-98a2-4f66-b19a-d0179658759b")
-	)
-	(junction
-		(at 111.76 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "63e4b534-ff16-46ec-9c02-2402123759b3")
-	)
-	(junction
-		(at 111.76 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "65588799-7f47-406a-93b7-a6ccd7da9faa")
 	)
 	(junction
 		(at 93.98 107.95)
@@ -5127,12 +4959,6 @@
 		(uuid "7cd7d665-759a-429a-adf4-9dd3362ac50c")
 	)
 	(junction
-		(at 111.76 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "81a7b9e9-ee61-4281-bf7b-46bbda333324")
-	)
-	(junction
 		(at 93.98 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5143,12 +4969,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8470aa84-aa11-4b20-ac25-5537cb5e32c7")
-	)
-	(junction
-		(at 111.76 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "84e241e6-aa9a-4d2c-91a8-aedce45c3b05")
 	)
 	(junction
 		(at 31.75 87.63)
@@ -5426,12 +5246,6 @@
 		(color 0 0 0 0)
 		(uuid "f7839862-4e62-421a-9ee0-62188aaffb31")
 	)
-	(junction
-		(at 111.76 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fb47718f-e9f6-49b9-97f4-41729f9d08ab")
-	)
 	(no_connect
 		(at 25.4 110.49)
 		(uuid "b9d85efc-48bf-4e19-9b6a-2635dd91ecbc")
@@ -5536,7 +5350,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 153.67) (xy 111.76 153.67)
+			(xy 101.6 153.67) (xy 121.92 153.67)
 		)
 		(stroke
 			(width 0)
@@ -5676,13 +5490,13 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 125.73) (xy 246.38 125.73)
+			(xy 143.51 63.5) (xy 153.67 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "184a400a-f2ea-44d4-9d2d-9919f3cb332e")
+		(uuid "18c56804-6f11-47b4-8d7b-d2a91f834a42")
 	)
 	(wire
 		(pts
@@ -5826,7 +5640,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 118.11) (xy 101.6 118.11)
+			(xy 101.6 118.11) (xy 121.92 118.11)
 		)
 		(stroke
 			(width 0)
@@ -5836,7 +5650,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 36.83) (xy 111.76 36.83)
+			(xy 101.6 36.83) (xy 121.92 36.83)
 		)
 		(stroke
 			(width 0)
@@ -6066,16 +5880,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 101.6) (xy 179.07 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4572f45a-c26b-4b23-bafc-f233b4884a54")
-	)
-	(wire
-		(pts
 			(xy 201.93 104.14) (xy 201.93 105.41)
 		)
 		(stroke
@@ -6093,16 +5897,6 @@
 			(type default)
 		)
 		(uuid "462de9e6-96c6-4fbd-a441-0984d77f788e")
-	)
-	(wire
-		(pts
-			(xy 275.59 123.19) (xy 246.38 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47fdbd4b-d6e4-4e36-9006-2ab1d38f3764")
 	)
 	(wire
 		(pts
@@ -6196,13 +5990,13 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 59.69) (xy 111.76 59.69)
+			(xy 179.07 101.6) (xy 179.07 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "52158f87-c174-48b5-b28b-af2390819110")
+		(uuid "50c05e04-4093-4d0d-92c3-cf619bd2b9c0")
 	)
 	(wire
 		(pts
@@ -6386,16 +6180,6 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 128.27) (xy 246.38 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63b577d5-af8b-4cfa-8bc6-6f62a2def0fb")
-	)
-	(wire
-		(pts
 			(xy 31.75 154.94) (xy 31.75 156.21)
 		)
 		(stroke
@@ -6463,16 +6247,6 @@
 			(type default)
 		)
 		(uuid "6ac18a92-304f-4cb9-b249-8a9472e38111")
-	)
-	(wire
-		(pts
-			(xy 121.92 118.11) (xy 111.76 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b6c9d90-9af1-4b47-b73d-f55f27e794f0")
 	)
 	(wire
 		(pts
@@ -6766,16 +6540,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 176.53) (xy 101.6 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8697378f-7ca1-4011-8398-dacf52f75960")
-	)
-	(wire
-		(pts
 			(xy 62.23 48.26) (xy 62.23 49.53)
 		)
 		(stroke
@@ -6783,16 +6547,6 @@
 			(type default)
 		)
 		(uuid "8868025b-4a87-448e-a9ce-eaedfacb55ca")
-	)
-	(wire
-		(pts
-			(xy 111.76 36.83) (xy 101.6 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c3ce255-458a-4aa0-8a79-8a3e08c93bbe")
 	)
 	(wire
 		(pts
@@ -7096,16 +6850,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 95.25) (xy 179.07 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2894343-2bd5-4b69-9f90-6501aac75536")
-	)
-	(wire
-		(pts
 			(xy 179.07 105.41) (xy 186.69 105.41)
 		)
 		(stroke
@@ -7343,6 +7087,16 @@
 			(type default)
 		)
 		(uuid "c0bc29a8-0cc9-4d87-b496-c2b2079b9c14")
+	)
+	(wire
+		(pts
+			(xy 179.07 95.25) (xy 179.07 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c16d5dd6-48a9-4d4e-b76b-08a17f3d51bd")
 	)
 	(wire
 		(pts
@@ -7666,7 +7420,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 176.53) (xy 111.76 176.53)
+			(xy 101.6 176.53) (xy 121.92 176.53)
 		)
 		(stroke
 			(width 0)
@@ -7746,7 +7500,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 59.69) (xy 101.6 59.69)
+			(xy 101.6 59.69) (xy 121.92 59.69)
 		)
 		(stroke
 			(width 0)
@@ -7766,7 +7520,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 95.25) (xy 111.76 95.25)
+			(xy 101.6 95.25) (xy 121.92 95.25)
 		)
 		(stroke
 			(width 0)
@@ -7866,16 +7620,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 95.25) (xy 101.6 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f54d4373-fa5a-4220-a168-b08bd537ddff")
-	)
-	(wire
-		(pts
 			(xy 212.09 62.23) (xy 212.09 66.04)
 		)
 		(stroke
@@ -7893,16 +7637,6 @@
 			(type default)
 		)
 		(uuid "f7a82595-50e3-4f2c-8e67-36887fdd5fac")
-	)
-	(wire
-		(pts
-			(xy 111.76 153.67) (xy 101.6 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa1a0877-4d72-47cc-90cb-51ef6586106e")
 	)
 	(wire
 		(pts
@@ -8901,73 +8635,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 111.76 36.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "13bc0526-e411-4cfb-8bf5-6e724a2d9f67")
-		(property "Reference" "TP19"
-			(at 109.22 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 114.3 34.7979 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 116.84 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 111.76 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bc041fbe-52d4-4d6c-b799-654509e754ab")
-		)
-		(instances
-			(project "inverter"
-				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
-					(reference "TP19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N5819")
 		(at 58.42 33.02 90)
 		(unit 1)
@@ -9305,73 +8972,6 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 111.76 59.69 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "28f329b5-cb78-4b6e-9d28-f0a2043826c3")
-		(property "Reference" "TP20"
-			(at 114.3 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 109.22 61.7221 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 106.68 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 111.76 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cf6226c5-5311-4bc7-844a-fd10ee4e5ab7")
-		)
-		(instances
-			(project "inverter"
-				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
-					(reference "TP20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
 		(at 251.46 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9511,73 +9111,6 @@
 			(project "inverter"
 				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 111.76 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2ce33350-63fb-4712-941a-7d465c38abf6")
-		(property "Reference" "TP21"
-			(at 109.22 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 114.3 93.2179 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 116.84 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 111.76 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5f3b7bbd-793d-4fd9-95b9-a6245be8b1f3")
-		)
-		(instances
-			(project "inverter"
-				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
-					(reference "TP21")
 					(unit 1)
 				)
 			)
@@ -10547,73 +10080,6 @@
 			(project "inverter"
 				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
 					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 111.76 176.53 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "477adac8-0bf7-45ab-bcfc-9b9bd91db365")
-		(property "Reference" "TP24"
-			(at 114.3 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 109.22 178.5621 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 106.68 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 111.76 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6e35c173-3c82-412d-a941-5392efea653e")
-		)
-		(instances
-			(project "inverter"
-				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
-					(reference "TP24")
 					(unit 1)
 				)
 			)
@@ -12359,73 +11825,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 111.76 118.11 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6fe8a594-2bd5-408d-bc07-54834872954f")
-		(property "Reference" "TP22"
-			(at 114.3 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 109.22 120.1421 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 106.68 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 111.76 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e26a5e11-0cae-44a4-8110-0fd63db2a96d")
-		)
-		(instances
-			(project "inverter"
-				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
-					(reference "TP22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 242.57 33.02 180)
 		(unit 1)
@@ -12701,74 +12100,6 @@
 			(project "inverter"
 				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Bridged")
-		(at 148.59 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b55cbb5-d4cd-4ec3-8206-caf1828d718b")
-		(property "Reference" "JP1"
-			(at 148.59 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Jumper_2_Bridged"
-			(at 148.59 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 148.59 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 148.59 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, closed/bridged"
-			(at 148.59 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d54490e3-400d-4768-be01-2fa1a71d6c3c")
-		)
-		(pin "1"
-			(uuid "9855ebb9-0bec-4d72-ad7c-92bc9103ae55")
-		)
-		(instances
-			(project ""
-				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
-					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -15439,77 +14770,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 280.67 125.73 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b70c3e6e-bfa6-496c-b14a-3e752c8a8489")
-		(property "Reference" "J8"
-			(at 279.146 130.048 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x03_Pin"
-			(at 283.21 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 280.67 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 280.67 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 280.67 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "58219423-cb9f-4052-839a-a42bd8a2788d")
-		)
-		(pin "3"
-			(uuid "eed3c807-5094-45a4-811c-3d27d5954349")
-		)
-		(pin "1"
-			(uuid "c7f47a94-2111-4abc-a459-8afa4ed25fbf")
-		)
-		(instances
-			(project "inverter"
-				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 186.69 140.97 90)
 		(unit 1)
@@ -16648,7 +15908,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 173.99 99.06 0)
+		(at 173.99 101.6 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16656,7 +15917,7 @@
 		(dnp no)
 		(uuid "d053a6d0-288a-42a8-b67a-a8f6e17e7c28")
 		(property "Reference" "J3"
-			(at 174.625 93.98 0)
+			(at 174.625 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16664,7 +15925,7 @@
 			)
 		)
 		(property "Value" "5Vext In"
-			(at 174.625 96.52 0)
+			(at 174.625 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16672,7 +15933,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
-			(at 173.99 99.06 0)
+			(at 173.99 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16681,7 +15942,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 99.06 0)
+			(at 173.99 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16690,7 +15951,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 173.99 99.06 0)
+			(at 173.99 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17872,73 +17133,6 @@
 			(project "inverter"
 				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
 					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 111.76 153.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ebaa4111-d0b4-46c4-a447-872c882f869d")
-		(property "Reference" "TP23"
-			(at 109.22 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 114.3 151.6379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 116.84 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 111.76 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fde87d9d-e0af-4c65-9864-010987dc26e1")
-		)
-		(instances
-			(project "inverter"
-				(path "/e9816699-297a-4648-9c1f-521bc7b67ea4"
-					(reference "TP23")
 					(unit 1)
 				)
 			)
